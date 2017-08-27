@@ -1,9 +1,9 @@
-## Professional Biography for *Your Name*
+## Professional Biography for Zachary Carey
 ## Contact information
- - include your contact email address
+ - Email: careyzr@mail.uc.edu
 ## Co-op Work Experience
-  - include job title, company, and dates of employment
-  - include technical and non-technical skills and expertise used during employment
-  - include other relevant work experience
+  - Intelligrated: Oracle IT
+  - Fascor: .NET Developer
+  - Gardner .NET Developer
 ## Project Sought
-  - discuss the type of capstone project you are seeking
+   Interested in web applications, blockchain, cryptography 
