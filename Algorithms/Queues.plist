@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>10.1</key>
+	<string>Queue operations may involve initializing or defining the queue, utilizing it, and then completely erasing it from the memory.</string>
+	<key>10.2</key>
+	<string>As in stacks, a queue can also be implemented using Arrays, Linked-lists, Pointers and Structures. For the sake of simplicity, we shall implement queues using one-dimensional array</string>
+	<key>10.3</key>
+	<string>10.3</string>
+	<key>11.1</key>
+	<string>11.1</string>
+	<key>11.2</key>
+	<string>11.2</string>
+	<key>11.3</key>
+	<string>11.3</string>
+	<key>11.4</key>
+	<string>11.4</string>
+	<key>11.5</key>
+	<string>11.5</string>
+	<key>11.6</key>
+	<string>11.6</string>
+	<key>11.7</key>
+	<string>11.7</string>
+	<key>11.8</key>
+	<string>11.8</string>
+	<key>11.9</key>
+	<string>11.9</string>
+</dict>
+</plist>

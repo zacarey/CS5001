@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>10.1</key>
+	<string>The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.</string>
+	<key>11</key>
+	<string>First, &quot;4&quot; and &quot;1&quot; are compared. &quot;4&quot; is greater than &quot;1&quot; </string>
+	<key>12</key>
+	<string>Therefore, &quot;4&quot; is swapped with &quot;1&quot;. Now, the number on the left is smaller than the number on the right</string>
+	<key>13</key>
+	<string>Now, we continue &quot;bubbling&quot; to the right and compare &quot;4&quot; with &quot;9&quot;. This time &quot;4&quot; is smaller than &quot;9&quot;, so the numbers don&apos;t get swapped.</string>
+	<key>14</key>
+	<string>Again, we &quot;bubble&quot; to the right and compare &quot;9&quot; with &quot;2&quot;</string>
+	<key>15</key>
+	<string>The number on the left, which is &quot;9&quot;, is greater than the number on the right, which is &quot;2&quot;. Therefore, the numbers get swapped.</string>
+	<key>16</key>
+	<string>Then, &quot;9&quot; is compared with &quot;5&quot;.</string>
+	<key>17</key>
+	<string>Obviously, these numbers need to be swapped.</string>
+	<key>17.1</key>
+	<string>Now, we reach end of the list, &quot;9&quot; is in correct position</string>
+	<key>17.2</key>
+	<string>Next step, we come back to the front of the list and repeat the &quot;bubbling&quot; operation.</string>
+	<key>18</key>
+	<string>&quot;1&quot; and &quot;4&quot; are compared. </string>
+	<key>19</key>
+	<string>Then, &quot;4&quot; and &quot;2&quot; are compared</string>
+	<key>20</key>
+	<string>Swap &quot;4&quot; with &quot;2&quot;</string>
+	<key>21</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>22</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>23</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>24</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>end</key>
+	<string></string>
+</dict>
+</plist>

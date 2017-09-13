@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01</key>
+	<string>First, the list is divided into two sub-lists.</string>
+	<key>02</key>
+	<string>Continue to divide the sub-list to the left into halves.</string>
+	<key>03</key>
+	<string>When the number of elements of the sub-list is one, the division is complete.</string>
+	<key>03.1</key>
+	<string>Now, two child sub-list are combined. </string>
+	<key>04</key>
+	<string>While being combined, these two numbers are put in order from smallest to largest.</string>
+	<key>05</key>
+	<string>Continue to divide the sub-list to the right into halves.</string>
+	<key>06</key>
+	<string>Then, two child sub-lists are merged.</string>
+	<key>06.1</key>
+	<string>Now, two groups of multiple numbers need to be combined.</string>
+	<key>07</key>
+	<string>The numbers from these two groups are arranged so that they are ordered from smallest to largest after combination.</string>
+	<key>08</key>
+	<string>The same operation is applied onto the other sub-list.</string>
+	<key>09</key>
+	<string>Continue to divide the sub-lists and merge them together.</string>
+	<key>10</key>
+	<string>Continue to divide the sub-lists and merge them together.</string>
+	<key>11</key>
+	<string>Continue to divide the sub-lists and merge them together.</string>
+	<key>12</key>
+	<string>Continue to divide the sub-lists and merge them together.</string>
+	<key>end</key>
+	<string></string>
+</dict>
+</plist>

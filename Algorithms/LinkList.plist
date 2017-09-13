@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>10.1</key>
+	<string>Một Danh sách liên kết (Linked List) là một dãy các cấu trúc dữ liệu được kết nối với nhau thông qua các liên kết (link).</string>
+	<key>10.2</key>
+	<string>Hiểu một cách đơn giản thì Danh sách liên kết là một cấu trúc dữ liệu bao gồm một nhóm các nút (node) tạo thành một chuỗi.</string>
+	<key>10.3</key>
+	<string>Mỗi nút gồm 2 thành phần :
+ Thành phần dữ liệu(data): dùng để lưu trữ thông tin của nút đó
+ Thành phần referecnce: dùng để tham chiếu đến node kế tiếp. </string>
+	<key>10.4</key>
+	<string>Thành phần reference của Node( 0x15 ) sẽ lưu địa chỉ bộ nhớ là Null để báo hiệu Node( 0x15 ) là Node cuối </string>
+	<key>11.1</key>
+	<string>Example: ta có node 0x10 có thành phần data là 1 chuỗi String IOS</string>
+	<key>11.2</key>
+	<string>Example: node 0x10 tham chiếu  là 0x15 dùng để tham chiếu đến node 0x15</string>
+	<key>12.3</key>
+	<string>Thêm Node( 0x35 )  vào giữa 2 phần tử Node( 0x12 ) và Node( 0x10 ) </string>
+	<key>12.4</key>
+	<string>Thành phần reference của Node( 0x12 ) sẽ lưu địa chỉ bộ nhớ là 0x35 để tham chiếu đến Node( 0x35 )</string>
+	<key>12.5</key>
+	<string>Thành phần reference của Node( 0x35 ) sẽ lưu địa chỉ bộ nhớ là 0x15 để tham chiếu đến Node( 0x15 )</string>
+	<key>13</key>
+	<string>end</string>
+</dict>
+</plist>

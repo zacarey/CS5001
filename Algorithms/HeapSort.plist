@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01</key>
+	<string>To begin, we need to build a max heap.</string>
+	<key>01.1</key>
+	<string>One characteristic of a max heap is all the parents are greater than or equal to their children.</string>
+	<key>01.2</key>
+	<string>First, the last parent node is targeted. </string>
+	<key>01.3</key>
+	<string>In this case, &quot;1&quot; is the last parent. It has two children &quot;2&quot; and &quot;5&quot;, both are greater than &quot;1&quot;. </string>
+	<key>02</key>
+	<string>However, &quot;5&quot; is the greatest number, so &quot;5&quot; and &quot;1&quot; are swapped.</string>
+	<key>02.1</key>
+	<string>Then, the next parent node is analyzed. This time, &quot;4&quot; is the parent.</string>
+	<key>02.2</key>
+	<string>&quot;4&quot; now has two children &quot;5&quot; and &quot;9&quot;.</string>
+	<key>03</key>
+	<string>&quot;9&quot; is the greatest number, so &quot;9&quot; and &quot;4&quot; are swapped.</string>
+	<key>03.1</key>
+	<string>Now, we have a max heap. The operation used above is called max heapify.</string>
+	<key>04</key>
+	<string>Then, the root of the heap, which is the greatest number of the heap, is swapped with the last number of the heap.</string>
+	<key>05</key>
+	<string>And, &quot;9&quot; is taken out of the heap, and put back to the list at the last position.</string>
+	<key>05.1</key>
+	<string>Again, we use max heapify for the new heap.</string>
+	<key>05.2</key>
+	<string>Now, we analyzed &quot;1&quot;. It has two children &quot;5&quot; and &quot;4&quot;.</string>
+	<key>06</key>
+	<string>&quot;5&quot; and &quot;1&quot; are swapped.</string>
+	<key>07</key>
+	<string>Then, &quot;1&quot; is swapped with &quot;2&quot;.</string>
+	<key>07.1</key>
+	<string>We have a max heap again.</string>
+	<key>08</key>
+	<string>The root &quot;5&quot; and the last element &quot;1&quot; are swapped.</string>
+	<key>09</key>
+	<string>And, &quot;5&quot; is taken out and inserted back to the list.</string>
+	<key>10</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>11</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>12</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>13</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>14</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>15</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>16</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>17</key>
+	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<key>end</key>
+	<string></string>
+</dict>
+</plist>
