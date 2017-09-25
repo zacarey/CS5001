@@ -1,6 +1,6 @@
 ## Project Description
  - Title: PrepCS
- - Authors: Loc Tran (Tranl2@mail.uc.edu) & Zachary Carey (Careyzr@mail.uc.edu)
+ - Authors: Loc Tran (tranl2@mail.uc.edu) & Zachary Carey (Careyzr@mail.uc.edu)
  - Advisor: Prof. Berman (Bermanka@ucmail.uc.edu)
  - Project Statement: To communicate Computer Science algorithmic processes in a meaningful way
    that the student can understand, learn, and apply.
