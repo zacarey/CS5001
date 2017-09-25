@@ -1,9 +1,9 @@
-## Professional Biography for Zachary Carey
-## Contact information
+## Self Assessment - Carey
+## Introduction
  - Email: careyzr@mail.uc.edu
-## Co-op Work Experience
+## Past Experience
   - Intelligrated: Oracle IT
   - Fascor: .NET Developer
   - Gardner .NET Developer
-## Project Sought
+## Approach
    Interested in web applications, blockchain, cryptography 
