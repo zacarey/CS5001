@@ -2,8 +2,8 @@
 ##### Introduction
 Our project is an iOS application that teaches Computer Science concepts with a focus on data structures 
 and algorithmic processes. We wish to communicate basic to complex processes through the use of 
-graphics, animations, text, and user input. The goal is to increase and measure the student's comprehenison and ability 
-in the domain of Computer Science.
+graphics, animations, text, and user input. The goal is to increase the student's comprehenison and ability 
+in the domain of Computer Science, specifically with algorithms.
 ##### Past Experience
 As a senior in CS we have the necessary knowledge of foundational algorithms and beyond. Classes like Data 
 Structures and Design & Analysis of Algorithms will be excellent references in our project. In our current trajectory,
@@ -19,5 +19,7 @@ What excites me most about this project is that this could really help some peop
 complex concepts of Computer Science. I'm hoping that we can tackle these topics in such a way that
 students can learn a topic visually, textually, and/or by application. 
 
-
+Currently we're appraching this project topically. Loc will be handling sorting algorithms 
+while I do searching. We plan on diving into graphs as well once we're stable with the basics. Hopefully, this
+can be used as a teaching tool for Computer Science professors.
 
