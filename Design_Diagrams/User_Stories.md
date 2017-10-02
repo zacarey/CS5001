@@ -1,8 +1,7 @@
-## Project Description
- - Title: PrepCS
- - Authors: Loc Tran (tranl2@mail.uc.edu) & Zachary Carey (Careyzr@mail.uc.edu)
- - Advisor: Prof. Berman (Bermanka@ucmail.uc.edu)
- - Project Statement: To communicate Computer Science algorithmic processes in a meaningful way
-   that the student can understand, learn, and apply.
- - Previous Experience: Both of us have experience in Swift and the iOS environment. 
+## User Stories
+
+As a student using this app, I want to visualize algorithms so I can understand
+computer science concepts better.
  
+As a teacher using this app, I wish to display how alogrithms perform so that my pupils can
+become better problem solvers.
