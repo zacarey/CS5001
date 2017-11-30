@@ -1,14 +1,19 @@
-## Abstract
+# Abstract
 
-##### Project Title
+###### Project Title
 
 CSPrep
 
-##### Team Members
+###### Team Members
 
 Zach Carey - careyzr@mail.uc.edu
+
 Loc Tran - tranl2@mail.uc.edu
 
-##### Faculty Advisor
+###### Faculty Advisor
 
 Dr. Kenneth Berman
+
+###### Statement
+
+Representing algorithmic processes using Swift on the iOS platform.
