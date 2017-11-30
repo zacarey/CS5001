@@ -16,4 +16,4 @@ Dr. Kenneth Berman
 
 ###### Statement
 
-Representing algorithmic processes using Swift on the iOS platform.
+To teach algorithmic processes, data structures, and computer science concepts using Swift on the iOS platform.
