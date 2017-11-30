@@ -1,4 +1,5 @@
-## Self Assessment - Carey
+## Zach Carey Self-Assessment
+
 ##### Introduction
 Our project is an iOS application that teaches Computer Science concepts with a focus on data structures 
 and algorithmic processes. We wish to communicate basic to complex processes through the use of 

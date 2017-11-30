@@ -1,4 +1,4 @@
-# Capstone Essay
+# Loc Tran Self-Assessment
 
 The name of the project is Learning Data Structures and Algorithms. The main objective of this project is to create an iOS application that helps Computer Science students to learn data structures and algorithms. This application will demonstrate step-by-step the explanation and animation of some basic CS data structures and algorithms. Data structure, that might be included, are Linked-List, Stacks and Queues. Algorithms, that will be demonstrated, are Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort, Linear Search, Binary Search, Breadth-First Search and Depth-First Search. This application will have two options for users. First option is Study. When users select this option, the application will provide a set of fixed data. In this mode, the application will provide a short explanation in text belong to the animation. The second option is Customize. In this mode, users can enter their set of data. This application also provides PDF documents that briefly describe the algorithms and data structure as well as their pseudo code.
 
