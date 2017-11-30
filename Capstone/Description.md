@@ -4,7 +4,7 @@
 
 ###### Background
 
-Computer Science (CS) is one of the fastest growing fields in the United States. It can be applied in almost every field of study and is a desired compliment to several degrees. While it may be an easy choice for postsecondary education, learning the foundational concepts is not as easy. 
+Computer Science (CS) is one of the fastest growing fields in the United States. It can be applied to almost every field of study and is a desired compliment to several degrees. While it may be an easy choice for postsecondary education, learning the foundational concepts is not as easy. 
 
 ###### Problem Statement
 
