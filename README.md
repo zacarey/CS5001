@@ -10,4 +10,4 @@ By: Loc Tran & Zach Carey
 6. [Slideshow](Capstone/Slideshow)
 7. [Self-Assessment Essays](Capstone/Team/Self-Assessment%20Essays)
 8. [Professional Biographies](Capstone/Team/Professional%20Biographies)
-9. [Budget](Capstone/Budget)
+9. [Budget](Capstone/Budget.md)
