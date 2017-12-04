@@ -1,6 +1,6 @@
-# CS5001 Senior Design
+# CSPrep
 
-CSPrep
+CS5001 Senior Design
 
 By: Loc Tran & Zach Carey
 
