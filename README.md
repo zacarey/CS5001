@@ -2,7 +2,7 @@
 Senior Design - iOS Data Structure Algorithms
 By: Loc Tran & Zach Carey
 
-1. Project Abstract
+1. [Project Abstract](CS5001/Capstone/Abstract.md)
 2. Project Description
 3. User Stories and Design Diagrams
 4. Project Tasks and Timeline
