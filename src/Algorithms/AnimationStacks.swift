@@ -2,7 +2,7 @@
 //  AnimationStacks.swift
 //  Algorithms
 //
-//  Created by TTung on 5/5/17.
+//  Created by Loc Tran on 5/5/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  MainScreen.swift
 //  Algorithms
 //
-//  Created by TTung on 3/28/17.
+//  Created by Loc Tran on 3/28/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 
@@ -19,7 +19,7 @@ class MainScreen: UITableViewController, GADBannerViewDelegate {
     
     var menu: [MenuSection]!
     var bannerView = GADBannerView()
-    var viewcontroller: ViewController!
+    var viewcontroller: UIViewController!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -36,7 +36,7 @@ class MainScreen: UITableViewController, GADBannerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewcontroller = ViewController()
+        viewcontroller = UIViewController()
         
 //        initAdMobBanner()
         self.tableView.contentInset = UIEdgeInsetsMake(20,0,0,0)

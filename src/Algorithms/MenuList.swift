@@ -2,7 +2,7 @@
 //  MenuList.swift
 //  Algorithms
 //
-//  Created by TTung on 3/28/17.
+//  Created by Loc Tran on 3/28/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 
@@ -39,9 +39,9 @@ class MenuList: NSObject {
             
             ])
         
-        let inter = MenuSection(section: "N-Queen ", menus:[
-            Menu(title: "N-Queen Problem", viewClass: "ViewController",inputClass: SelectionSortIVC(), infoTitle: "A" )
-            ])
+//        let inter = MenuSection(section: "N-Queen ", menus:[
+//            Menu(title: "N-Queen Problem", viewClass: "ViewController",inputClass: SelectionSortIVC(), infoTitle: "A" )
+//            ])
         let tower = MenuSection(section: "Tower Of Hanoi", menus:[
             Menu(title: "Tower Of Hanoi", viewClass: "TowerOfHaNoiVC",inputClass: SelectionSortIVC(), infoTitle: "A" )
             ])
@@ -55,7 +55,7 @@ class MenuList: NSObject {
             Menu(title: "Linear Search", viewClass: "LinearSVC",inputClass: LinearSVC(), infoTitle: "A" ),
             Menu(title: "Binary Search", viewClass: "BinarySVC",inputClass: BinarySVC(), infoTitle: "A" ),
             Menu(title: "Breadth-First Search", viewClass: "BreadthSVC",inputClass: BreadthSVC(), infoTitle: "A" ),
-            Menu(title: "Deap-First Search", viewClass: "DeapSVC",inputClass: DeapSVC(), infoTitle: "A" )
+            Menu(title: "Depth-First Search", viewClass: "DepthSVC",inputClass: DepthSVC(), infoTitle: "A" )
             ])
 
         
@@ -69,7 +69,7 @@ class MenuList: NSObject {
             ])
         
         let mainScreen = MainScreen(style: UITableViewStyle.grouped)
-        mainScreen.menu = [basic,search,inter,tower,dataStructs,advance]
+        mainScreen.menu = [basic,search,tower,dataStructs,advance]
         mainScreen.title = "Algorithms"
         
         let nav = UINavigationController(rootViewController: mainScreen)
@@ -82,7 +82,6 @@ class MenuList: NSObject {
     }
     class func nextView(){
         rootWindow.rootViewController = UINavigationController(rootViewController: main)
-        
         
     }
 }

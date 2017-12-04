@@ -2,7 +2,7 @@
 //  Breadth_Search.swift
 //  Algorithms
 //
-//  Created by Ledung95d on 5/18/17.
+//  Created by Loc Tran on 5/18/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 

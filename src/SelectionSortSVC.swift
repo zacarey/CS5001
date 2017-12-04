@@ -2,7 +2,7 @@
 //  SelectionSortVC.swift
 //  Algorithms
 //
-//  Created by TTung on 3/28/17.
+//  Created by Loc Tran on 3/28/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 

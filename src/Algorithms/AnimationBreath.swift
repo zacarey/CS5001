@@ -2,7 +2,7 @@
 //  AnimationBreath.swift
 //  Algorithms
 //
-//  Created by TTung on 5/19/17.
+//  Created by Loc Tran on 5/19/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import UIKit
 
 class AnimationBreath{
     
-    var graph: GraphBreadthDeap!
+    var graph: GraphBreadthDepth!
     var arrayAction: [BFS_Step]!
     var countSolution = 0
     var currentStep: BFS_Step!
@@ -20,7 +20,7 @@ class AnimationBreath{
     var lastValue = 0
     var nextSolution = true
     
-    init(graph: GraphBreadthDeap,arrayAction:[BFS_Step],arrayLabel: [SortingLabel]!) {
+    init(graph: GraphBreadthDepth,arrayAction:[BFS_Step],arrayLabel: [SortingLabel]!) {
         self.graph = graph
         self.arrayAction = arrayAction
         self.arrayLabel = arrayLabel

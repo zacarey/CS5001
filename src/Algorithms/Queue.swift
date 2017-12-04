@@ -2,7 +2,7 @@
 //  Queue.swift
 //  DsLienKe
 //
-//  Created by Ledung95d on 5/18/17.
+//  Created by Loc Tran on 5/18/17.
 //  Copyright © 2017 Admin. All rights reserved.
 //
 

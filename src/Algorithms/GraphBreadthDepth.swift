@@ -1,14 +1,14 @@
 //
-//  GraphBreadthDeap.swift
+//  GraphBreadthDepth.swift
 //  Algorithms
 //
-//  Created by TTung on 5/15/17.
+//  Created by Loc Tran on 5/15/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 
 import UIKit
 
-class GraphBreadthDeap: UIView {
+class GraphBreadthDepth: UIView {
     
     var arrayLabel: [SortingLabel]!
     var arrayArrow: [CAShapeLayer]!

@@ -1,15 +1,15 @@
 //
-//  AnimationDeap.swift
+//  AnimationDepth.swift
 //  Algorithms
 //
-//  Created by Ledung95d on 5/17/17.
+//  Created by Loc Tran on 5/17/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 
 import Foundation
 import UIKit
-class AnimationDeap{
-    var graph: GraphBreadthDeap!
+class AnimationDepth{
+    var graph: GraphBreadthDepth!
     var arrayAction: [DFS_Step]!
     var countSolution = 0
     var currentStep: DFS_Step!
@@ -18,7 +18,7 @@ class AnimationDeap{
     var value: Int = 0
     var lastValue = 0
     
-    init(graph: GraphBreadthDeap,arrayAction:[DFS_Step],arrayLabel: [SortingLabel]!) {
+    init(graph: GraphBreadthDepth,arrayAction:[DFS_Step],arrayLabel: [SortingLabel]!) {
         self.graph = graph
         self.arrayAction = arrayAction
         self.arrayLabel = arrayLabel

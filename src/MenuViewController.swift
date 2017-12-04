@@ -2,7 +2,7 @@
 //  MenuViewController.swift
 //  Algorithms
 //
-//  Created by Ledung95d on 4/11/17.
+//  Created by Loc Tran on 4/11/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 

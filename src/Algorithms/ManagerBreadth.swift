@@ -2,7 +2,7 @@
 //  ManagerBreadth.swift
 //  Algorithms
 //
-//  Created by TTung on 5/15/17.
+//  Created by Loc Tran on 5/15/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Foundation
 
 class ManagerBreadth {
     
-    var graph: GraphBreadthDeap!
+    var graph: GraphBreadthDepth!
     var viewcontroller: UIViewController!
     var arrayLabel: [SortingLabel]!
     
@@ -24,7 +24,7 @@ class ManagerBreadth {
     
     func initBreadth(viewcontroller: UIViewController){
         
-        graph = GraphBreadthDeap(frame: CGRect(x: 0,
+        graph = GraphBreadthDepth(frame: CGRect(x: 0,
                                                y:(viewcontroller.navigationController?.navigationBar.frame.height)! + UIApplication.shared.statusBarFrame.height * 2,
                                                width: viewcontroller.view.bounds.size.width,
                                                height: viewcontroller.view.bounds.size.height/2))

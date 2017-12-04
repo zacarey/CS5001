@@ -1,8 +1,8 @@
 //
-//  DeapFirstSearch.swift
+//  DepthFirstSearch.swift
 //  Algorithms
 //
-//  Created by Ledung95d on 5/17/17.
+//  Created by Loc Tran on 5/17/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ struct DFS_Step{
     var act: String!
     var to: String!
 }
-class DeapFirstSearch{
+class DepthFirstSearch{
     var arrayAction: [DFS_Step]!
     init() {
         self.arrayAction = [DFS_Step]()

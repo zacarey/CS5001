@@ -91,12 +91,7 @@ class AboutVC: UIViewController {
         khanhTxtView.backgroundColor = UIColor.white        
         
 //        locTxtView.text = "Loc Tran \nhttps://www.linkedin.com/in/loc-tran-cs/"
-//        
-//        tungTxtView.text = "Tung Nguyen \nhttps://www.linkedin.com/in/nguyen-thanh-tung-0b1664124/"
-//        
-//        khanhTxtView.text = "Khanh Nguyen \nnguyenphuckhanh91@gmail.com"
-//        
-//        dungTxtView.text = "Dung Le \nhuudung95d@gmail.com"
+
     }
 
 }

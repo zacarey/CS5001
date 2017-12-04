@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Algorithms
 //
-//  Created by TTung on 4/5/17.
+//  Created by Loc Tran on 4/5/17.
 //  Copyright © 2017 LocTran. All rights reserved.
 //
 
