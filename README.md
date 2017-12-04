@@ -1,6 +1,10 @@
-# CS5001
-Senior Design - iOS Data Structure Algorithms
+# CS5001 Senior Design
+
+CSPrep
+
 By: Loc Tran & Zach Carey
+
+Design report can be found [Here](Capstone/FinalReport.pdf)
 
 1. [Project Abstract](Capstone/Abstract.md)
 2. [Project Description](Capstone/Description.md)
