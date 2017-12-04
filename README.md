@@ -9,5 +9,5 @@ By: Loc Tran & Zach Carey
 5. [ABET Concerns Essay](Capstone/ABET.md)
 6. [Slideshow](Capstone/Slideshow)
 7. [Self-Assessment Essays](Capstone/Team/Self-Assessment%20Essays)
-8. [Professional Biographies](Capstone/Professional%20Biographies)
+8. [Professional Biographies](Capstone/Team/Professional%20Biographies)
 9. [Budget](Capstone/Budget)
