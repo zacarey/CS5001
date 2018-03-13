@@ -63,7 +63,7 @@ class SortingLabel: UILabel {
             if let  labelText: NSString = text as NSString?{
                 let labelHeight = self.frame.height-5
 
-                let textHeight = labelText.size(attributes: [NSFontAttributeName:self.font.withSize(fontSizeAverage)]).height
+                let textHeight = labelText.size(withAttributes: [NSAttributedStringKey.font:self.font.withSize(fontSizeAverage)]).height
                 textandLabelHeight = labelHeight - textHeight
                 if(fontSizeAverage==minFontsize || fontSizeAverage==maxFontsize){
                     if(textandLabelHeight<0){
@@ -103,7 +103,7 @@ extension UILabel{
             if let  labelText: NSString = text as NSString?{
                 let labelWidth = self.frame.width-10
                 
-                let textWidth = labelText.size(attributes: [NSFontAttributeName:self.font.withSize(fontSizeAverage)]).width
+                let textWidth = labelText.size(withAttributes: [NSAttributedStringKey.font:self.font.withSize(fontSizeAverage)]).width
                 textandLabelHeight = labelWidth - textWidth
                 if(fontSizeAverage==minFontsize || fontSizeAverage==maxFontsize){
                     if(textandLabelHeight<0){
@@ -140,7 +140,7 @@ extension UILabel{
             if let  labelText: NSString = text as NSString?{
                 let labelWidth = self.frame.width-20
                 
-                let textWidth = labelText.size(attributes: [NSFontAttributeName:self.font.withSize(fontSizeAverage)]).width
+                let textWidth = labelText.size(withAttributes: [NSAttributedStringKey.font:self.font.withSize(fontSizeAverage)]).width
                 textandLabelHeight = labelWidth - textWidth
                 if(fontSizeAverage==minFontsize || fontSizeAverage==maxFontsize){
                     if(textandLabelHeight<0){

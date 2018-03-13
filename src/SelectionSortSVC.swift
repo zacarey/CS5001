@@ -27,7 +27,7 @@ class SelectionSortSVC: StudyVC {
         
     }
     
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         self.managerSort.graph.removeFromSuperview()
         self.managerSort.textStudy.removeFromSuperview()
         btnRun.isUserInteractionEnabled = true

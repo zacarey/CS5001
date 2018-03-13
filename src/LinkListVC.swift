@@ -14,6 +14,7 @@ class LinkListVC:StudyVC{
         super.viewDidLoad()
         manager = ManagerLinkList()
         manager.initSortWith(viewcontroller: self)
+        
         btnRun.removeFromSuperview()
         btnStep.frame = CGRect(x: x, y: view.bounds.size.height-spacing-btnSizeHeight, width: btnSizeWidth*2 + spacing, height: btnSizeHeight)
 
@@ -22,7 +23,7 @@ class LinkListVC:StudyVC{
         btnReset.addTarget(self, action:  #selector(reset(sender:)), for: .touchUpInside)
 
     }
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         self.manager.graph.removeFromSuperview()
         self.manager.textStudy.removeFromSuperview()
         btnRun.isUserInteractionEnabled = true

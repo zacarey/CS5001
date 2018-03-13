@@ -50,7 +50,7 @@ class ManagerHeapSort {
         }
         
         graph = HeapGraph(frame: CGRect(x: 0,
-                                        y:(viewcontroller.navigationController?.navigationBar.frame.height)! + UIApplication.shared.statusBarFrame.height * 2,
+                                        y:(viewcontroller.navigationController?.navigationBar.frame.maxY)! + 20,
                                         width: viewcontroller.view.bounds.size.width,
                                         height: viewcontroller.view.bounds.size.height/2),
                           arrayDisplay: self.arrayDisplay,
@@ -70,14 +70,16 @@ class ManagerHeapSort {
             for _ in arrayAction{
                 ele = ele + 1
             }
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + UIApplication.shared.statusBarFrame.height,
-                                                y: graph.frame.origin.y+graph.frame.height,
-                                                width: graph.frame.width - 2*UIApplication.shared.statusBarFrame.height ,
-                                                height: yMax-(graph.frame.origin.y+graph.frame.height)))
+            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
+                                                    y: graph.frame.maxY + 20,
+                                                    width: graph.frame.width - 40,
+                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                      textContainer: nil)
 
             viewcontroller.view.addSubview(textStudy)
             
             textStudy.text = "Heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region."
+            updateTextFont()
             var path: String = ""
             path = Bundle.main.path(forResource:"HeapSort", ofType: "plist")!
             dictData = NSDictionary(contentsOfFile: path)!
@@ -93,6 +95,27 @@ class ManagerHeapSort {
         sort = HeapSort(arrayInput: array)
         return sort.actionArray
         
+    }
+    
+    func updateTextFont() {
+        if (textStudy.text.isEmpty || textStudy.bounds.size.equalTo(CGSize.zero)) {
+            return;
+        }
+        
+        let textViewSize = textStudy.frame.size;
+        let fixedWidth = textViewSize.width;
+        let expectSize = textStudy.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)))
+        
+        var expectFont = textStudy.font
+        if (expectSize.height > textViewSize.height) {
+            while (textStudy.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT))).height > textViewSize.height) {
+                expectFont = textStudy.font!.withSize(textStudy.font!.pointSize - 1)
+                textStudy.font = expectFont
+            }
+        }
+        else {
+            return
+        }
     }
     
     @objc func run(sender: UIButton) {
@@ -111,6 +134,7 @@ class ManagerHeapSort {
         if(VIEW_CHOSEN=="study"){
             if(ele==arrayKeys.count){
                 textStudy.text = ""
+                updateTextFont()
                 return
             }
             btnRunTmp.isUserInteractionEnabled = false
@@ -121,9 +145,11 @@ class ManagerHeapSort {
                 btnStepTmp.isUserInteractionEnabled = false
                 let data = dictData[arrayKeys[ele]]
                 textStudy.text = data as! String?
+                updateTextFont()
                 animationStep.next()
             }else if(arrayKeys[ele]=="end"){
                 textStudy.text = "The list is fully sorted"
+                updateTextFont()
                 btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
                 btnStepTmp.setNeedsDisplay()
                 btnStepTmp.isUserInteractionEnabled = false
@@ -131,7 +157,7 @@ class ManagerHeapSort {
             }else{
                 let data = dictData[arrayKeys[ele]]
                 textStudy.text = data as! String?
-                
+                updateTextFont()
                 btnStepTmp.isUserInteractionEnabled = true
                 
             }

@@ -39,7 +39,7 @@ class QuickSortIVC: InputVC{
         
     }
     
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         
         if HAVE_GRAPH == true{
             self.managerSort.quickGraph.removeFromSuperview()
@@ -64,7 +64,7 @@ class QuickSortIVC: InputVC{
         btnStepCheck.isHidden = false
     }
     
-    func run(sender:UIButton){
+    @objc func run(sender:UIButton){
         
         if MORE_THAN_ONE_ELE == true {
             
@@ -85,7 +85,7 @@ class QuickSortIVC: InputVC{
         }
     }
     
-    func add(sender:UIButton){
+    @objc func add(sender:UIButton){
         
         if(textField.text != "" && textField.text != nil){
             if (Int(textField.text!)! <= 99){
@@ -118,7 +118,7 @@ class QuickSortIVC: InputVC{
         
     }
     
-    func step(sender: UIButton){
+    @objc func step(sender: UIButton){
         
         if MORE_THAN_ONE_ELE == true {
             if HAVE_GRAPH == false{

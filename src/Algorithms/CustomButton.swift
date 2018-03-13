@@ -27,7 +27,7 @@ extension UIButton{
             if let  labelText: NSString = text as NSString?{
                 let labelHeight = self.frame.height-5
                 
-                let textHeight = labelText.size(attributes: [NSFontAttributeName:self.titleLabel?.font.withSize(fontSizeAverage) as Any]).height
+                let textHeight = labelText.size(withAttributes: [NSAttributedStringKey.font:self.titleLabel?.font.withSize(fontSizeAverage) as Any]).height
                 
                 textandLabelHeight = labelHeight - textHeight
                 if(fontSizeAverage==minFontsize || fontSizeAverage==maxFontsize){

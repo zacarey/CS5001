@@ -51,7 +51,7 @@ class ShareVC: UIViewController {
         view.addSubview(imgLogo)
     }
     
-    func share(sender: UIButton){
+    @objc func share(sender: UIButton){
         let activityVC = UIActivityViewController(activityItems: ["www.google.com"], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
         

@@ -28,13 +28,13 @@ class GraphLinearBinary: UIView {
     }
     
     func drawBoard(){
-        let cellSize = self.frame.width/6
-        for i in 1..<56{
+        let cellSize = frame.width/6
+        for i in 1..<37{
             var int: Int!
             int = i
             arrayInt.append(int)
         }
-        var count:Int = 45
+        var count:Int = 36
         for indexCol in 0..<6{
             for indexRow in 0..<6{
                 

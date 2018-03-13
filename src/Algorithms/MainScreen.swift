@@ -192,7 +192,7 @@ class MainScreen: UITableViewController, GADBannerViewDelegate {
         
     }
 
-    func backHOME(sender: UIBarButtonItem){
+    @objc func backHOME(sender: UIBarButtonItem){
         
         
         dismiss(animated: true, completion: nil)

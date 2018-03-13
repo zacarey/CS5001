@@ -34,7 +34,7 @@ class QueuesSVC: StudyVC {
         labelFront.isHidden = true
     }
     
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         self.manager.graph.removeFromSuperview()
         self.manager.textStudy.removeFromSuperview()
         btnStepBig.isUserInteractionEnabled = true

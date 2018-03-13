@@ -42,7 +42,7 @@ class Graph: UIView {
         
         for index in 0..<arrayDisplay.count {
             
-            let sortingLabel = SortingLabel(frame: CGRect(x: x, y:  0 + rectSize + spacing,
+            let sortingLabel = SortingLabel(frame: CGRect(x: x, y: 0 + rectSize + spacing,
                                                           width: rectSize, height: rectSize),
                                             color: colors[index],
                                             value: String(arrayDisplay[index]))

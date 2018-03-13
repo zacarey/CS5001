@@ -26,7 +26,6 @@ class BubbleSortSVC: StudyVC {
         btnStep.addTarget(self.managerSort, action: #selector(managerSort.step(sender:)), for: .touchUpInside)
         
         btnReset.addTarget(self, action:  #selector(reset(sender:)), for: .touchUpInside)
-        print(" view did load duoc thuc hien");
         
         
     }
@@ -37,7 +36,7 @@ class BubbleSortSVC: StudyVC {
     }
 
 
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         resetApp()
     }
     

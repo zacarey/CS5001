@@ -27,7 +27,8 @@ class ManagerLinear {
     func initLinear(viewcontroller: UIViewController, search: Int){
         
         
-        graph = GraphLinearBinary(frame: CGRect(x: 32, y: (viewcontroller.navigationController?.navigationBar.frame.height)! + UIApplication.shared.statusBarFrame.height * 2, width: viewcontroller.view.bounds.size.width - CGFloat(64), height: viewcontroller.view.bounds.size.width - CGFloat(64)))
+        graph = GraphLinearBinary(frame: CGRect(x: 32, y: (viewcontroller.navigationController?.navigationBar.frame.maxY)! + 20, width: viewcontroller.view.bounds.size.width - CGFloat(64), height: viewcontroller.view.bounds.size.width - CGFloat(64)))
+        
         viewcontroller.view.addSubview(graph)
         
         self.search = search
@@ -36,14 +37,13 @@ class ManagerLinear {
         
         if(VIEW_CHOSEN=="study"){
             
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + UIApplication.shared.statusBarFrame.height,
-                                                    y: graph.frame.origin.y+graph.frame.height+CGFloat(8),
-                                                    width: graph.frame.width - 2*UIApplication.shared.statusBarFrame.height ,
-                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)))
+            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x,
+                                                    y: graph.frame.maxY + 20,
+                                                    width: graph.frame.width,
+                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                      textContainer: nil)
             
             viewcontroller.view.addSubview(textStudy)
-            
-            
             
             var path: String = ""
             
@@ -63,7 +63,7 @@ class ManagerLinear {
         return linear.arrayAction
     }
     @objc func run(sender: UIButton){
-        textStudy.text = "Tim kiem so: \(search!)"
+        textStudy.text = "Search: \(search!)"
         animate.loop()
         btnRunTmp.isUserInteractionEnabled = false
         btnStepTmp.isUserInteractionEnabled = false

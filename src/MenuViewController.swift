@@ -131,7 +131,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
     }
     
-    func backHOME(sender: UIBarButtonItem){
+    @objc func backHOME(sender: UIBarButtonItem){
         dismiss(animated: true, completion: nil)
     }
     

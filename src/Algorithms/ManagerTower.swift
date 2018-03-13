@@ -38,15 +38,18 @@ class ManagerTower {
         animation = AnimationTower(arrayLabel: arrayLabel, arrayCenter: arrayCenter, arrayAction: arrayAction,graph: graph)
         if(VIEW_CHOSEN=="study"){
             
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + UIApplication.shared.statusBarFrame.height,
-                                                y: graph.frame.origin.y+graph.frame.height,
-                                                width: graph.frame.width - 2*UIApplication.shared.statusBarFrame.height ,
-                                                height: yMax-(graph.frame.origin.y+graph.frame.height)))
+            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
+                                                y: graph.frame.maxY + 20,
+                                                width: graph.frame.width - 40 ,
+                                                height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                      textContainer: nil)
             
             viewcontroller.view.addSubview(textStudy)
             
             
             textStudy.text = "The Tower of Hanoi is a mathematical puzzle. It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top. The objective of the puzzle is to move the entire stack to another rod."
+            
+            updateTextFont()
             
             var path: String = ""
             
@@ -62,6 +65,28 @@ class ManagerTower {
         
         
     }
+    
+    func updateTextFont() {
+        if (textStudy.text.isEmpty || textStudy.bounds.size.equalTo(CGSize.zero)) {
+            return;
+        }
+        
+        let textViewSize = textStudy.frame.size;
+        let fixedWidth = textViewSize.width;
+        let expectSize = textStudy.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)))
+        
+        var expectFont = textStudy.font
+        if (expectSize.height > textViewSize.height) {
+            while (textStudy.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT))).height > textViewSize.height) {
+                expectFont = textStudy.font!.withSize(textStudy.font!.pointSize - 1)
+                textStudy.font = expectFont
+            }
+        }
+        else {
+            return
+        }
+    }
+    
     @objc func run(sender: UIButton) {
         
         
@@ -77,6 +102,7 @@ class ManagerTower {
         if(VIEW_CHOSEN=="study"){
             if(ele==arrayKeys.count){
                 textStudy.text = ""
+                updateTextFont()
                 return
             }
             
@@ -88,7 +114,7 @@ class ManagerTower {
                 btnStepTmp.isUserInteractionEnabled = true
                 let data = dictData[arrayKeys[ele]]
                 textStudy.text = data as! String?
-                
+                updateTextFont()
             }else if(arrayKeys[ele].integerValue==11){
                 if(arrayKeys[ele].characters.count<5){
                     // thuc hien animation
@@ -97,20 +123,24 @@ class ManagerTower {
                     animation.animationFirst(step: _step.integerValue!)
                     let data = dictData[arrayKeys[ele]]
                     textStudy.text = data as! String?
+                    updateTextFont()
                 }else{
                     let data = dictData[arrayKeys[ele]]
                     textStudy.text = data as! String?
+                    updateTextFont()
                     self.graph.resetGraph()
                     
                 }
                 
             }else if(arrayKeys[ele].integerValue==12){
-                textStudy.text = "Now. let's begin:" 
+                textStudy.text = "Now. let's begin:"
+                updateTextFont()
                 self.graph.resetGraph()
             }else if (arrayKeys[ele].integerValue==13){
                 
                 let data = dictData[arrayKeys[ele]]
                 textStudy.text = data as! String?
+                updateTextFont()
                 btnStepTmp.isUserInteractionEnabled = false
                 btnRunTmp.isUserInteractionEnabled = false
                 animationStep.next()
@@ -118,7 +148,7 @@ class ManagerTower {
             }else if (arrayKeys[ele] == "end"){
                 
                 textStudy.text = "After 7 steps, the goal of this puzzle is now reached"
-                
+                updateTextFont()
                 btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
                 btnStepTmp.setNeedsDisplay()
                 btnStepTmp.isUserInteractionEnabled = false

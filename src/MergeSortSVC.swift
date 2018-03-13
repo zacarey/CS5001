@@ -24,7 +24,7 @@ class MergeSortSVC: StudyVC {
         btnReset.addTarget(self, action:  #selector(reset(sender:)), for: .touchUpInside)
         
     }
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         self.managerSort.graph.removeFromSuperview()
         btnRun.isUserInteractionEnabled = true
         btnStep.isUserInteractionEnabled = true

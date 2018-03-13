@@ -41,7 +41,7 @@ class InsertionSortIVC: InputVC{
         
     }
     
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         
         if HAVE_GRAPH == true{
             self.managerSort.graph.removeFromSuperview()
@@ -66,7 +66,7 @@ class InsertionSortIVC: InputVC{
         btnStepCheck.isHidden = false
     }
     
-    func run(sender:UIButton){
+    @objc func run(sender:UIButton){
         
         if MORE_THAN_ONE_ELE == true {
             
@@ -87,7 +87,7 @@ class InsertionSortIVC: InputVC{
         }
     }
     
-    func add(sender:UIButton){
+    @objc func add(sender:UIButton){
         
         if(textField.text != "" && textField.text != nil){
             if (Int(textField.text!)! <= 99){
@@ -120,7 +120,7 @@ class InsertionSortIVC: InputVC{
         
     }
     
-    func step(sender: UIButton){
+    @objc func step(sender: UIButton){
         
         if MORE_THAN_ONE_ELE == true {
             if HAVE_GRAPH == false{

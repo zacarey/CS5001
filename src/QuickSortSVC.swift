@@ -25,7 +25,7 @@ class QuickSortSVC: StudyVC {
         
     }
     
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         self.managerSort.quickGraph.removeFromSuperview()
         
         btnRun.isUserInteractionEnabled = true

@@ -14,13 +14,12 @@ class DetailTxtView: UITextView {
         super.init(frame: frame, textContainer: textContainer)
         
         self.backgroundColor = UIColor.white
-        self.isUserInteractionEnabled = true
-        self.isScrollEnabled = true
         self.layer.cornerRadius = 10
         self.isEditable = false
         self.layer.masksToBounds = true
         self.textColor = UIColor.black
-        self.flashScrollIndicators()
+
+        self.isScrollEnabled = false
         self.textContainerInset = UIEdgeInsetsMake(5, 10, 5, 10)
         self.font = UIFont.boldSystemFont(ofSize:20)
         

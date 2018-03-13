@@ -21,7 +21,6 @@ class StudyVC: UIViewController {
     var btnStep:UIButton!
     var btnRun:UIButton!
     var btnAdd:UIButton!
-    var textField:UITextField!
     var btnStepBig: UIButton!
     
     

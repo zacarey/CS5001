@@ -21,7 +21,7 @@ class BreadthSVC: StudyVC {
         btnReset.addTarget(self, action: #selector(reset(sender:)), for: .touchUpInside)
     }
     
-    func reset(sender:UIButton){
+    @objc func reset(sender:UIButton){
         self.manager.graph.removeFromSuperview()
         //        self.manager.textStudy.removeFromSuperview()
         btnRun.isUserInteractionEnabled = true

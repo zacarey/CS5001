@@ -1,0 +1,11 @@
+framework module KDPulseButton {
+  umbrella header "KDPulseButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module KDPulseButton.Swift {
+    header "KDPulseButton-Swift.h"
+    requires objc
+}
