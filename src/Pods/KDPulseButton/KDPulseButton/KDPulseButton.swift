@@ -26,7 +26,6 @@ import UIKit
         }
         
         set {
-            
             layer.backgroundColor = newValue.cgColor
         }
     }

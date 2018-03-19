@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "fe7fd11fa7a99599347a0b7bd0fb789c"
-build_time: [1514251141, 739394000]
-inputs:
-  "/Users/loctran/loc/CS5001/src/Pods/KDPulseButton/KDPulseButton/KDPulseButton.swift": [1512426191, 0]

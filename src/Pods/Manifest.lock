@@ -1,46 +1,12 @@
 PODS:
-  - Firebase/AdMob (3.15.0):
-    - Firebase/Core
-    - Google-Mobile-Ads-SDK (= 7.19.0)
-  - Firebase/Core (3.15.0):
-    - FirebaseAnalytics (= 3.7.0)
-    - FirebaseCore (= 3.5.2)
-  - FirebaseAnalytics (3.7.0):
-    - FirebaseCore (~> 3.5)
-    - FirebaseInstanceID (~> 1.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseCore (3.5.2):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseInstanceID (1.0.9)
-  - Google-Mobile-Ads-SDK (7.19.0)
-  - GoogleToolboxForMac/Defines (2.1.1)
-  - GoogleToolboxForMac/NSData+zlib (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
   - KDPulseButton (1.0.1)
 
 DEPENDENCIES:
-  - Firebase/AdMob
-  - Firebase/Core
-  - KDPulseButton (from `https://github.com/KaiqueDamato/KDPulseButton.git`)
-
-EXTERNAL SOURCES:
-  KDPulseButton:
-    :git: https://github.com/KaiqueDamato/KDPulseButton.git
-
-CHECKOUT OPTIONS:
-  KDPulseButton:
-    :commit: f5938d19f8a2e1c773b1f950d3fc0116d0eb9a13
-    :git: https://github.com/KaiqueDamato/KDPulseButton.git
+  - KDPulseButton (~> 1.0)
 
 SPEC CHECKSUMS:
-  Firebase: 2b1cdfba1cda8589f32904a697cc753322bff9d8
-  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
-  FirebaseCore: a024587e43778508700af8c6b1209f7c4516ba02
-  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
-  Google-Mobile-Ads-SDK: d1bcdbd8347a105a687345b8511701172a5074e9
-  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
-  KDPulseButton: 5afd6a4c1f2e38bda26c55822f27c724f326077c
+  KDPulseButton: 6d8da7fb6f2c9bbd0e818ba8e3186c154d409913
 
-PODFILE CHECKSUM: 6cad6bb1752d8b65c16dd609596bca711a25f8cc
+PODFILE CHECKSUM: 38753ca62185c78cce7e4fbeac8083e335f44521
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0
