@@ -39,46 +39,46 @@ class GraphBreadthDepth: UIView {
         labelMiner.textAlignment = .center
         arrayLabel.append(labelMiner)
         self.addSubview(labelMiner)
-
+        
         
         //0 
         
-            for i in 1...3{
-                
-                let label = SortingLabel(frame: CGRect(x: 2*spacing + rectSize, y: frame.height/5*CGFloat(i), width: rectSize, height: rectSize/2))
-                
-                let attachment = NSTextAttachment()
-                attachment.image = UIImage(named: "monster2")
-                attachment.bounds = CGRect(x: 0, y: 0, width: rectSize/2, height: rectSize/2)
-                let attachmentString = NSAttributedString(attachment: attachment)
-                label.attributedText = attachmentString
-                label.textAlignment = .center
-                label.layer.masksToBounds = true
-                label.layer.cornerRadius = rectSize/4
-                label.clipsToBounds = true
-                label.layer.borderWidth = 2
-                label.layer.borderColor = UIColor.black.cgColor
-                arrayLabel.append(label)
-                self.addSubview(label)
+        for i in 1...3{
+            
+            let label = SortingLabel(frame: CGRect(x: 2*spacing + rectSize, y: frame.height/5*CGFloat(i), width: rectSize, height: rectSize/2))
+            
+            let attachment = NSTextAttachment()
+            attachment.image = UIImage(named: "monster2")
+            attachment.bounds = CGRect(x: 0, y: 0, width: rectSize/2, height: rectSize/2)
+            let attachmentString = NSAttributedString(attachment: attachment)
+            label.attributedText = attachmentString
+            label.textAlignment = .center
+            label.layer.masksToBounds = true
+            label.layer.cornerRadius = rectSize/4
+            label.clipsToBounds = true
+            label.layer.borderWidth = 2
+            label.layer.borderColor = UIColor.black.cgColor
+            arrayLabel.append(label)
+            self.addSubview(label)
             
         }
         
         // 1,2,3
         for i in 0...1{
-        let labelBG = SortingLabel(frame: CGRect(x: spacing, y: CGFloat(2+i)*frame.height/5, width: rectSize, height: rectSize/2))
-        let attachmentChest = NSTextAttachment()
-        attachmentChest.image = UIImage(named: "stop")
-        attachmentChest.bounds = CGRect(x: 0, y: 0, width: rectSize/3, height: rectSize/3)
-        let attachmentChestString = NSAttributedString(attachment: attachmentChest)
-        labelBG.attributedText = attachmentChestString
-        labelBG.textAlignment = .center
-        labelBG.layer.masksToBounds = true
-        labelBG.layer.cornerRadius = rectSize/4
-        labelBG.clipsToBounds = true
-        labelBG.layer.borderWidth = 2
-        labelBG.layer.borderColor = UIColor.black.cgColor
-        arrayLabel.append(labelBG)
-        self.addSubview(labelBG)
+            let labelBG = SortingLabel(frame: CGRect(x: spacing, y: CGFloat(2+i)*frame.height/5, width: rectSize, height: rectSize/2))
+            let attachmentChest = NSTextAttachment()
+            attachmentChest.image = UIImage(named: "stop")
+            attachmentChest.bounds = CGRect(x: 0, y: 0, width: rectSize/3, height: rectSize/3)
+            let attachmentChestString = NSAttributedString(attachment: attachmentChest)
+            labelBG.attributedText = attachmentChestString
+            labelBG.textAlignment = .center
+            labelBG.layer.masksToBounds = true
+            labelBG.layer.cornerRadius = rectSize/4
+            labelBG.clipsToBounds = true
+            labelBG.layer.borderWidth = 2
+            labelBG.layer.borderColor = UIColor.black.cgColor
+            arrayLabel.append(labelBG)
+            self.addSubview(labelBG)
         }
         
         //4,5
@@ -97,8 +97,8 @@ class GraphBreadthDepth: UIView {
         labelC.layer.borderColor = UIColor.black.cgColor
         arrayLabel.append(labelC)
         self.addSubview(labelC)
-
-     //6
+        
+        //6
         
         let labelE = SortingLabel(frame: CGRect(x: 2*spacing+rectSize, y:frame.height*4/5, width: rectSize, height: rectSize/2))
         let attachmentChest = NSTextAttachment()
@@ -114,7 +114,7 @@ class GraphBreadthDepth: UIView {
         labelE.layer.borderColor = UIColor.black.cgColor
         arrayLabel.append(labelE)
         self.addSubview(labelE)
-
+        
         //7
     }
     
@@ -158,9 +158,9 @@ class GraphBreadthDepth: UIView {
         
         //6
     }
-
+    
     func arrowCorresponding(value: Int) -> Int{
-
+        
         if value == 1{
             return 0
         }

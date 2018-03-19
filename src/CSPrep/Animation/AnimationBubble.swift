@@ -183,15 +183,9 @@ class AnimationBubble {
         self.colSolution += 1
         
         if (self.colSolution == self.arrayAction.count) {
-//            if(VIEW_CHOSEN=="study"){
-//                btnStepTmp.isUserInteractionEnabled = true
-//            }else{
-//                btnStepTmp.isUserInteractionEnabled = false
-//                
-//            }
-            
             btnStepTmp.isUserInteractionEnabled = true
             return
+            
         }else{
             btnStepTmp.isUserInteractionEnabled = true
             

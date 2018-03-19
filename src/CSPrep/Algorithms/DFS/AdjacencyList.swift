@@ -24,11 +24,11 @@ extension AdjacencyList: Graphable {
     public typealias Element = T
     public func createVertex(data: Element) -> Vertex<Element> {
         let vertex = Vertex(data: data)
-
+        
         if adjacencyDict[vertex] == nil {
             adjacencyDict[vertex] = []
         }
-//        Vertex<Element>
+        //        Vertex<Element>
         return vertex
     }
     public func add(_ type: EdgeType, from source: Vertex<Element>, to destination: Vertex<Element>) {
@@ -40,20 +40,20 @@ extension AdjacencyList: Graphable {
         }
     }
     /*
-    public func weight(from source: Vertex<Element>, to destination: Vertex<Element>) -> Double? {
-        guard let edges = adjacencyDict[source] else { // 1
-            return nil
-        }
-
-        for edge in edges { // 2
-            if edge.destination == destination { // 3
-                return edge.weight
-            }
-        }
-        
-        return nil // 4
-    }
- */
+     public func weight(from source: Vertex<Element>, to destination: Vertex<Element>) -> Double? {
+     guard let edges = adjacencyDict[source] else { // 1
+     return nil
+     }
+     
+     for edge in edges { // 2
+     if edge.destination == destination { // 3
+     return edge.weight
+     }
+     }
+     
+     return nil // 4
+     }
+     */
     public func edges(from source: Vertex<Element>) -> [Edge<Element>]? {
         return adjacencyDict[source]
     }
@@ -72,5 +72,5 @@ extension AdjacencyList: Graphable {
         }
         return result
     }
-
+    
 }

@@ -28,21 +28,21 @@ public class AnimarionBinary {
         
         
     }
-
+    
     
     func animation(){
-       
+        
         if self.currentStep.act != "Start" && self.currentStep.act != "NotFound"{
-        self.arrayLabel[self.currentStep.midIndex].layer.backgroundColor = UIColor.red.cgColor
+            self.arrayLabel[self.currentStep.midIndex].layer.backgroundColor = UIColor.red.cgColor
         }
         
         UIView.setAnimationsEnabled(true)
         UIView.animate(withDuration: 2, animations: {
             if self.currentStep.act == "Start"{
-            for i in 0..<36 {
-                self.arrayLabel[i].layer.backgroundColor = LIME_COLOR.cgColor
-                self.arrayLabel[i].text = String(self.arraySort[i])
-            }
+                for i in 0..<36 {
+                    self.arrayLabel[i].layer.backgroundColor = LIME_COLOR.cgColor
+                    self.arrayLabel[i].text = String(self.arraySort[i])
+                }
             }
             else if  self.currentStep.act == "DivideSmall"{
                 for i in self.currentStep.midIndex..<36{
@@ -61,13 +61,13 @@ public class AnimarionBinary {
                     self.arrayLabel[i].layer.backgroundColor = UIColor.lightGray.cgColor
                 }
             }
-           
-
+            
+            
         }) {_ in
             if self.currentStep.act == "DivideSmall" || self.currentStep.act == "DivideBig"{
                 self.arrayLabel[self.currentStep.midIndex].layer.backgroundColor = UIColor.lightGray.cgColor
             }
-            
+                
             else if self.currentStep.act == "Done" {
                 self.arrayLabel[self.currentStep.midIndex].layer.backgroundColor = LIME_COLOR.cgColor
                 
@@ -76,12 +76,12 @@ public class AnimarionBinary {
             else if  self.currentStep.act == "NotFound"{
                 return
             }
-           
             
-        self.countSolution += 1
-        self.currentStep = self.arrayAction[self.countSolution]
-        self.animation()
-
+            
+            self.countSolution += 1
+            self.currentStep = self.arrayAction[self.countSolution]
+            self.animation()
+            
         }
     }
     
@@ -138,7 +138,7 @@ public class AnimarionBinary {
             
         }
     }
-
+    
     
     func next(){
         self.currentStep = arrayAction[countSolution]

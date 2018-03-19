@@ -12,7 +12,7 @@ import UIKit
 class AnimationLinkList{
     var colSolution = 0
     var graph: Graph_LinkList!
-
+    
     init(graph: Graph_LinkList){
         self.graph = graph
         
@@ -27,7 +27,7 @@ class AnimationLinkList{
                 self.graph.arrow2.isHidden = false
                 self.graph.labelNext.isHidden = false
                 self.graph.arrNodes[1].layer.borderColor = UIColor.red.cgColor
-
+                
             }else if(step==3){
                 self.graph.arrow1.isHidden = true
                 self.graph.labelValue.isHidden = true
@@ -50,8 +50,8 @@ class AnimationLinkList{
                 self.graph.arrowCurved[1].isHidden = false
                 let label = self.graph.addLable.viewWithTag(42) as! UILabel
                 label.text = "0x15"
-
-            
+                
+                
             }
         }){_ in
             btnStepTmp.isUserInteractionEnabled = true

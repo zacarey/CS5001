@@ -26,9 +26,9 @@ class ManagerBreadth {
     func initBreadth(viewcontroller: UIViewController){
         
         graph = GraphBreadthDepth(frame: CGRect(x: 0,
-                                               y:(viewcontroller.navigationController?.navigationBar.frame.height)! + UIApplication.shared.statusBarFrame.height * 2,
-                                               width: viewcontroller.view.bounds.size.width,
-                                               height: viewcontroller.view.bounds.size.height/2))
+                                                y:(viewcontroller.navigationController?.navigationBar.frame.height)! + UIApplication.shared.statusBarFrame.height * 2,
+                                                width: viewcontroller.view.bounds.size.width,
+                                                height: viewcontroller.view.bounds.size.height/2))
         viewcontroller.view.addSubview(graph)
         self.arrayAction = getArrayAction()
         self.animation = AnimationBreath(graph: graph, arrayAction: self.arrayAction, arrayLabel: self.graph.arrayLabel)
@@ -50,9 +50,9 @@ class ManagerBreadth {
         btnRunTmp.setNeedsDisplay()
         btnStepTmp.setNeedsDisplay()
     }
-
+    
     func getArrayAction() -> [BFS_Step] {
-
+        
         sort = BreadthFirstSearch()
         return sort.arrayAction
         

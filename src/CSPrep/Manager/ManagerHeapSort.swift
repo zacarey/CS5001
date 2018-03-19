@@ -65,28 +65,26 @@ class ManagerHeapSort {
         
         animationStep = AnimationHeap(arrayLabel: self.arrayLabel,  arrayLabelBehind: self.arrayLabelBehind, arrayPosition: self.arrayPosition, arrayAction: self.arrayAction, graphHeap: graph)
         
-//        if(VIEW_CHOSEN=="study"){
-            ele = 0
-            for _ in arrayAction{
-                ele = ele + 1
-            }
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
-                                                    y: graph.frame.maxY + 20,
-                                                    width: graph.frame.width - 40,
-                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)),
-                                      textContainer: nil)
-
-            viewcontroller.view.addSubview(textStudy)
-            
-            textStudy.text = "Heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region."
-            updateTextFont()
-            var path: String = ""
-            path = Bundle.main.path(forResource:"HeapSort", ofType: "plist")!
-            dictData = NSDictionary(contentsOfFile: path)!
-            arrayKeys = dictData.allKeys as! [String]
-            ele = 0
-            arrayKeys = arrayKeys.sorted()
-//        }
+        ele = 0
+        for _ in arrayAction{
+            ele = ele + 1
+        }
+        textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
+                                                y: graph.frame.maxY + 20,
+                                                width: graph.frame.width - 40,
+                                                height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                  textContainer: nil)
+        
+        viewcontroller.view.addSubview(textStudy)
+        
+        textStudy.text = "Heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region."
+        updateTextFont()
+        var path: String = ""
+        path = Bundle.main.path(forResource:"HeapSort", ofType: "plist")!
+        dictData = NSDictionary(contentsOfFile: path)!
+        arrayKeys = dictData.allKeys as! [String]
+        ele = 0
+        arrayKeys = arrayKeys.sorted()
         
     }
     
@@ -131,43 +129,37 @@ class ManagerHeapSort {
     
     @objc func step(sender: UIButton) {
         
-//        if(VIEW_CHOSEN=="study"){
-            if(ele==arrayKeys.count){
-                textStudy.text = ""
-                updateTextFont()
-                return
-            }
-            btnRunTmp.isUserInteractionEnabled = false
-            btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
-            btnRunTmp.setNeedsDisplay()
+        if(ele==arrayKeys.count){
+            textStudy.text = ""
+            updateTextFont()
+            return
+        }
+        btnRunTmp.isUserInteractionEnabled = false
+        btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
+        btnRunTmp.setNeedsDisplay()
+        
+        if(arrayKeys[ele].isNumber){
+            btnStepTmp.isUserInteractionEnabled = false
+            let data = dictData[arrayKeys[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            animationStep.next()
+        }else if(arrayKeys[ele]=="end"){
+            textStudy.text = "The list is fully sorted"
+            updateTextFont()
+            btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
+            btnStepTmp.setNeedsDisplay()
+            btnStepTmp.isUserInteractionEnabled = false
             
-            if(arrayKeys[ele].isNumber){
-                btnStepTmp.isUserInteractionEnabled = false
-                let data = dictData[arrayKeys[ele]]
-                textStudy.text = data as! String?
-                updateTextFont()
-                animationStep.next()
-            }else if(arrayKeys[ele]=="end"){
-                textStudy.text = "The list is fully sorted"
-                updateTextFont()
-                btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
-                btnStepTmp.setNeedsDisplay()
-                btnStepTmp.isUserInteractionEnabled = false
-                
-            }else{
-                let data = dictData[arrayKeys[ele]]
-                textStudy.text = data as! String?
-                updateTextFont()
-                btnStepTmp.isUserInteractionEnabled = true
-                
-            }
-            ele = ele + 1
+        }else{
+            let data = dictData[arrayKeys[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            btnStepTmp.isUserInteractionEnabled = true
             
-//        }else{
-//            btnStepTmp.isUserInteractionEnabled = false
-//            btnRunTmp.isUserInteractionEnabled = false
-//            animationStep.next()
-//        }
+        }
+        ele = ele + 1
+        
         
     }
 }

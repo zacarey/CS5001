@@ -15,7 +15,7 @@ class LinearSearch {
     init(arrayInput: [Int], search: Int) {
         self.arrayInput = arrayInput
         linearSearch(arrayInput, search)
-
+        
     }
     
     func linearSearch<T: Equatable>(_ array: [T], _ object: T) {

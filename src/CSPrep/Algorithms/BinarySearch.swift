@@ -15,7 +15,7 @@ class BinarySearch {
     init(arrayInput: [Int], search: Int){
         self.arrayInput = arrayInput
         self.arrayAction.append(BinaryStep(act: "Start", midIndex: 0))
-
+        
         binarySearch(arrayInput, key: search, range: 0 ..< arrayInput.count)
     }
     

@@ -21,11 +21,11 @@ class LinkListVC:StudyVC{
         
         btnRun.removeFromSuperview()
         btnStep.frame = CGRect(x: x, y: view.bounds.size.height-spacing-btnSizeHeight, width: btnSizeWidth*2 + spacing, height: btnSizeHeight)
-
+        
         btnStep.addTarget(self.manager, action: #selector(manager.step(sender:)), for: .touchUpInside)
-
+        
         btnReset.addTarget(self, action:  #selector(reset(sender:)), for: .touchUpInside)
-
+        
     }
     @objc func reset(sender:UIButton){
         self.manager.graph.removeFromSuperview()
@@ -38,5 +38,5 @@ class LinkListVC:StudyVC{
         btnStep.setNeedsDisplay()
         manager.initSortWith(viewcontroller: self)
     }
-
+    
 }

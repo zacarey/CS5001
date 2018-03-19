@@ -9,10 +9,10 @@
 import UIKit
 
 class LinearSVC: StudyVC {
-  
+    
     var search: Int!
     var manager: ManagerLinear!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +39,7 @@ class LinearSVC: StudyVC {
         btnStep.setNeedsDisplay()
         search = Int(arc4random_uniform(36)) + 1
         manager.initLinear(viewcontroller: self, search: search)
-
+        
     }
     
 }

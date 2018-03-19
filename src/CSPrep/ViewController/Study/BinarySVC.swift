@@ -9,13 +9,13 @@
 import UIKit
 
 class BinarySVC: StudyVC {
-
+    
     var search: Int!
     var manager: ManagerBinary!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "Binary Search"
         
         manager = ManagerBinary()
@@ -39,6 +39,6 @@ class BinarySVC: StudyVC {
         manager.initBinary(viewcontroller: self, search: search)
         
     }
-
- 
+    
+    
 }

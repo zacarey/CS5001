@@ -24,16 +24,12 @@ class PDFViewController: UIViewController {
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
+    override func viewWillAppear(_ animated: Bool) {
         let pdfTitle = PDF_TITLE
         
         let url = Bundle.main.url(forResource: pdfTitle, withExtension: "pdf")
         
-        let webView = UIWebView(frame: view.frame)
+        let webView = UIWebView(frame: CGRect(x: 0, y: (navigationController?.navigationBar.frame.maxY)!, width: view.frame.width, height: view.frame.height))
         let urlRequest = URLRequest(url: url!)
         
         webView.loadRequest(urlRequest as URLRequest)
@@ -41,6 +37,11 @@ class PDFViewController: UIViewController {
         
         view.addSubview(webView)
         title = pdfTitle
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         addBackButton()
         

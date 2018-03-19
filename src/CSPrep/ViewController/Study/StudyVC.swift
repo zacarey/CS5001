@@ -74,8 +74,6 @@ class StudyVC: UIViewController {
         addReadingButton()
         addHomeButton()
         
-//        VIEW_CHOSEN = "study"
-        
     }
     
     func addBtnReset() {
@@ -182,7 +180,7 @@ class StudyVC: UIViewController {
         view.addSubview(btnStepBig)
         
     }
-
+    
     func addReadingButton(){
         let readingButton = UIBarButtonItem(image: #imageLiteral(resourceName: "book"), style: .plain, target: self, action: #selector(pushToReadingVC(sender:)))
         readingButton.tintColor = UIColor.white

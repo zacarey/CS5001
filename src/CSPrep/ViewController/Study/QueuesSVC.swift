@@ -9,7 +9,7 @@
 import UIKit
 
 class QueuesSVC: StudyVC {
-
+    
     var manager: ManagerQueues!
     var labelEnqueues: SortingLabel!
     var labelDequeues: SortingLabel!
@@ -18,7 +18,7 @@ class QueuesSVC: StudyVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "Queues"
         
         manager = ManagerQueues()
@@ -64,7 +64,7 @@ class QueuesSVC: StudyVC {
         labelDequeues.textColor = UIColor.lightGray
         labelDequeues.textAlignment = .center
         view.addSubview(labelDequeues)
-
+        
     }
     
     func addRear(){
@@ -77,9 +77,9 @@ class QueuesSVC: StudyVC {
         labelRear.layer.borderWidth = 2
         labelRear.layer.borderColor = UIColor.black.cgColor
         labelRear.layer.cornerRadius = 10
-
+        
         view.addSubview(labelRear)
-
+        
     }
     
     func addFront(){
@@ -92,11 +92,11 @@ class QueuesSVC: StudyVC {
         labelFront.layer.borderWidth = 2
         labelFront.layer.borderColor = UIColor.black.cgColor
         labelFront.layer.cornerRadius = 10
-
+        
         
         view.addSubview(labelFront)
-
+        
     }
-   
-
+    
+    
 }

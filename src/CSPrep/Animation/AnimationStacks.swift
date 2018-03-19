@@ -19,7 +19,7 @@ class AnimationStacks {
     init(arrayLabel: [SortingLabel],  graph: GraphStacks) {
         
         self.arrLabel = arrayLabel
-//        self.arrayCenter = arrayCenter
+        //        self.arrayCenter = arrayCenter
         self.graph = graph
     }
     
@@ -27,11 +27,11 @@ class AnimationStacks {
         UIView.setAnimationsEnabled(true)
         UIView.animate(withDuration: 1, animations: {
             if self.colSolution == 0{
-            labelPushTmp.isHidden = false
-            self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[8])
+                labelPushTmp.isHidden = false
+                self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[8])
             }
             else if self.colSolution == 1{
-               
+                
                 labelPushTmp.isHidden = true
                 labelPopTmp.isHidden = false
                 self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[8])
@@ -50,7 +50,7 @@ class AnimationStacks {
             }
             else if self.colSolution == 5{
                 self.moveLabel(from: self.arrLabel[7], to: self.arrLabel[8])
-
+                
             }
             else if self.colSolution == 6 {
                 labelTopTmp.isHidden = true
@@ -59,15 +59,15 @@ class AnimationStacks {
             UIView.setAnimationsEnabled(true)
             UIView.animate(withDuration: 1, animations: {
                 if self.colSolution == 0{
-                self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[4])
-                self.moveLabel(from: labelTopTmp as! SortingLabel , to: self.arrLabel[10])
+                    self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[4])
+                    self.moveLabel(from: labelTopTmp as! SortingLabel , to: self.arrLabel[10])
                 }
-                
+                    
                 else if self.colSolution == 1{
                     self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[9])
-                     self.moveLabel(from: labelTopTmp as! SortingLabel , to: self.arrLabel[11])
+                    self.moveLabel(from: labelTopTmp as! SortingLabel , to: self.arrLabel[11])
                 }
-                
+                    
                 else if self.colSolution == 2{
                     self.moveLabel(from: self.arrLabel[3], to: self.arrLabel[9])
                     self.moveLabel(from: labelTopTmp as! SortingLabel, to: self.arrLabel[12])

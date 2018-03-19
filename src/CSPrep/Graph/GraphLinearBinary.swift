@@ -9,7 +9,7 @@
 import UIKit
 
 class GraphLinearBinary: UIView {
-
+    
     var arrayLabel: [SortingLabel]!
     var arrayFind = [Int]()
     var arrayInt = [Int]()
