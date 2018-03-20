@@ -119,15 +119,15 @@ class GraphQueues: UIView {
         arrayLabel.append(labelOut)
         self.addSubview(labelOut)
         // 10
-
+        
     }
     
     func posRearFront(){
         for i in 0...3{
-        let label = SortingLabel(frame: CGRect(x: frame.width - 6*spacing - 4*spacing*CGFloat(i), y: frame.height*9/10 , width: 3*spacing , height: frame.height/10))
+            let label = SortingLabel(frame: CGRect(x: frame.width - 6*spacing - 4*spacing*CGFloat(i), y: frame.height*9/10 , width: 3*spacing , height: frame.height/10))
             arrayLabel.append(label)
             self.addSubview(label)
-    }
+        }
         // 14
     }
     

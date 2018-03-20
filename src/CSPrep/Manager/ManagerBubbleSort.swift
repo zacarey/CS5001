@@ -75,30 +75,28 @@ class ManagerBubbleSort {
         
         animateStep = AnimationBubble(arrayLabel: self.arrayLabel, arrayLabelMiddle: self.arrayLabelMiddle, arrayLabelAbove: self.arrayLabelAbove, arrayLabelBelow: self.arrayLabelBelow, arrayAction: self.arrayAction)
         
-//        if(VIEW_CHOSEN=="study"){
-            ele = 0
-            
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
-                                                    y: graph.frame.maxY + 20,
-                                                    width: graph.frame.width - 40,
-                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)),
-                                      textContainer: nil)
-            
-            viewcontroller.view.addSubview(textStudy)
-            
-            textStudy.text = "Bubble sort repeatedly steps through the list to compare each pair of adjacent items and swap them if they are in the wrong order. This process is repeated until no swaps are needed."
-            
-            updateTextFont()
-            
-            var path: String = ""
-            
-            path = Bundle.main.path(forResource:"BubbleSort", ofType: "plist")!
-            dictData = NSDictionary(contentsOfFile: path)!
-            arrayKeys = dictData.allKeys as! [String]
-            
-            ele = 0
-            arrayKeys = arrayKeys.sorted(by: {$0 < $1})
-//        }
+        ele = 0
+        
+        textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
+                                                y: graph.frame.maxY + 20,
+                                                width: graph.frame.width - 40,
+                                                height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                  textContainer: nil)
+        
+        viewcontroller.view.addSubview(textStudy)
+        
+        textStudy.text = "Bubble sort repeatedly steps through the list to compare each pair of adjacent items and swap them if they are in the wrong order. This process is repeated until no swaps are needed."
+        
+        updateTextFont()
+        
+        var path: String = ""
+        
+        path = Bundle.main.path(forResource:"BubbleSort", ofType: "plist")!
+        dictData = NSDictionary(contentsOfFile: path)!
+        arrayKeys = dictData.allKeys as! [String]
+        
+        ele = 0
+        arrayKeys = arrayKeys.sorted(by: {$0 < $1})
         
         
     }
@@ -145,40 +143,35 @@ class ManagerBubbleSort {
     
     @objc func step(sender: UIButton) {
         
-//        if(VIEW_CHOSEN=="study"){
-            if(ele==arrayKeys.count){
-                textStudy.text = ""
-                updateTextFont()
-                return
-            }
-            btnRunTmp.isUserInteractionEnabled = false
-            btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
-            btnRunTmp.setNeedsDisplay()
-            
-            if(arrayKeys[ele].isNumber){
-                btnStepTmp.isUserInteractionEnabled = false
-                let data = dictData[arrayKeys[ele]]
-                textStudy.text = data as! String?
-                updateTextFont()
-                animateStep.next()
-            }else if(arrayKeys[ele]=="end"){
-                textStudy.text = "The list is fully sorted"
-                updateTextFont()
-                btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
-                btnStepTmp.setNeedsDisplay()
-                btnStepTmp.isUserInteractionEnabled = false
-            }else{
-                let data = dictData[arrayKeys[ele]]
-                textStudy.text = data as! String?
-                updateTextFont()
-                btnStepTmp.isUserInteractionEnabled = true
-            }
-            ele = ele + 1
-//        }else{
-//            btnStepTmp.isUserInteractionEnabled = false
-//            btnRunTmp.isUserInteractionEnabled = false
-//            animateStep.next()
-//        }
+        if(ele==arrayKeys.count){
+            textStudy.text = ""
+            updateTextFont()
+            return
+        }
+        btnRunTmp.isUserInteractionEnabled = false
+        btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
+        btnRunTmp.setNeedsDisplay()
+        
+        if(arrayKeys[ele].isNumber){
+            btnStepTmp.isUserInteractionEnabled = false
+            let data = dictData[arrayKeys[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            animateStep.next()
+        }else if(arrayKeys[ele]=="end"){
+            textStudy.text = "The list is fully sorted"
+            updateTextFont()
+            btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
+            btnStepTmp.setNeedsDisplay()
+            btnStepTmp.isUserInteractionEnabled = false
+        }else{
+            let data = dictData[arrayKeys[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            btnStepTmp.isUserInteractionEnabled = true
+        }
+        ele = ele + 1
+        
     }
     
 }

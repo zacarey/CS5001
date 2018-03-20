@@ -9,20 +9,20 @@
 import UIKit
 
 class TowerOfHaNoiVC: StudyVC {
-
+    
     var manager: ManagerTower!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "Tower Of Hanoi"
         
         manager = ManagerTower()
         manager.initSortWith(viewcontroller: self)
         btnRun.addTarget(self.manager, action: #selector(manager.run(sender:)), for: .touchUpInside)
-
+        
         btnStep.addTarget(self.manager, action: #selector(manager.step(sender:)), for: .touchUpInside)
-
+        
         btnReset.addTarget(self, action:  #selector(reset(sender:)), for: .touchUpInside)
     }
     
@@ -37,6 +37,6 @@ class TowerOfHaNoiVC: StudyVC {
         btnStep.setNeedsDisplay()
         manager.initSortWith(viewcontroller: self)
     }
-   
-
+    
+    
 }

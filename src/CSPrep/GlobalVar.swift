@@ -57,11 +57,6 @@ var DISPLAY_FONT_MAX: CGFloat = 60
 
 let BUTTON_COLOR = UIColor.white
 
-var DETAIL: UIViewController!
-var ROW_MENU_SECTION: Int!
-var ROW_MENU_CELL: Int!
-var INPUT_XIB_CLASS: UIViewController!
-var VIEW_CHOSEN: String!
 var PDF_TITLE: String!
 
 var btnStartTmp:UIButton!

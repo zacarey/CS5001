@@ -31,7 +31,7 @@ class AnimationQueues {
             else if self.colSolution == 1{
                 labelEnqueuesTmp.isHidden = false
                 self.moveLabel(from: self.arrLabel[2], to: self.arrLabel[6])
-
+                
             }
             else if self.colSolution == 2{
                 self.moveLabel(from: self.arrLabel[3], to: self.arrLabel[7])
@@ -39,13 +39,13 @@ class AnimationQueues {
             }
             else if self.colSolution == 3{
                 self.moveLabel(from: self.arrLabel[4], to: self.arrLabel[8])
-            
+                
             }
             else if self.colSolution == 4{
                 self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[9])
             }
             else if self.colSolution == 5 {
-            labelEnqueuesTmp.isHidden = true
+                labelEnqueuesTmp.isHidden = true
                 labelDequeuesTmp.isHidden = false
                 self.moveLabel(from: self.arrLabel[2], to: self.arrLabel[10])
                 self.moveLabel(from: self.arrLabel[3], to: self.arrLabel[6])
@@ -53,7 +53,7 @@ class AnimationQueues {
                 self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[8])
             }
             else if self.colSolution == 6 {
-            
+                
                 self.moveLabel(from: self.arrLabel[3], to: self.arrLabel[10])
                 self.moveLabel(from: self.arrLabel[4], to: self.arrLabel[6])
                 self.moveLabel(from: self.arrLabel[5], to: self.arrLabel[7])
@@ -74,9 +74,9 @@ class AnimationQueues {
                 self.moveLabel(from: labelFrontTmp, to: self.arrLabel[11])
                 self.moveLabel(from: labelRearTmp, to: self.arrLabel[12])
             }
-              else if self.colSolution == 2{
-            labelRearTmp.isHidden = false
-            labelFrontTmp.isHidden = false
+            else if self.colSolution == 2{
+                labelRearTmp.isHidden = false
+                labelFrontTmp.isHidden = false
             }
             else if self.colSolution == 3{
                 self.moveLabel(from: labelRearTmp, to: self.arrLabel[13])
@@ -101,13 +101,13 @@ class AnimationQueues {
             
             self.colSolution = self.colSolution + 1
             btnStepBigTmp.isUserInteractionEnabled = true
-
+            
         }
     }
     func moveLabel(from: SortingLabel, to: SortingLabel) {
         from.center = to.center
     }
-   
+    
     func loop(){
         animation()
         

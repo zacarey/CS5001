@@ -26,5 +26,5 @@ class TowerOfHaNoi {
             
             hanoi(n: n - 1, a: b, b: a, c: c)
         }
-}
+    }
 }

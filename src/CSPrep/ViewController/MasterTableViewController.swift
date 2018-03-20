@@ -20,7 +20,7 @@ class MasterTableViewController: UITableViewController {
     ]
     
     let sectionTitle = ["Sort","Search","Data Structures","Other"]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,31 +30,18 @@ class MasterTableViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 33
-//    }
-//
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let label = UILabel()
-//        label.text = sectionTitle[section]
-//        label.backgroundColor = UIColor(red: 222, green: 222, blue: 222, alpha: 1)
-//        label.textAlignment = NSTextAlignment.center
-//        return label
-//    }
-    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitle[section]
     }
-
+    
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-//        header.textLabel?.font = UIFont(name: "YourFontname", size: 14.0)
         header.textLabel?.textAlignment = NSTextAlignment.left
     }
     
@@ -78,8 +65,6 @@ class MasterTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-//        VIEW_CHOSEN = "study"
         
         var studyVC : UIViewController!
         
@@ -137,6 +122,6 @@ class MasterTableViewController: UITableViewController {
         }
         self.navigationController?.pushViewController(studyVC, animated: true)
     }
-
+    
 }
 

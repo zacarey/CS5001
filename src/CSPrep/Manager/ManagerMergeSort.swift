@@ -80,30 +80,28 @@ class ManagerMergeSort {
         
         animationStep = AnimationMerge(arrayLabel: self.arrayLabel, arrayLabelOne: self.arrayLabelOne, arrayLabelTwo: self.arrayLabelTwo, arrayLabelThree: self.arrayLabelThree, arrayLabelFour: self.arrayLabelFour, arrayAction: self.arrayAction, graphMerge: graph)
         
-//        if(VIEW_CHOSEN=="study"){
-            ele = 0
-            for _ in arrayAction{
-                ele = ele + 1
-            }
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
-                                                    y: graph.frame.maxY + 20,
-                                                    width: graph.frame.width - 40,
-                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)),
-                                      textContainer: nil)
-
-            viewcontroller.view.addSubview(textStudy)
-            
-            textStudy.text = "Merge Sort is an arrangement algorithm for sorting lists (or any data structure that can be accessed sequentially, eg. the file stream) in a certain order."
-            updateTextFont()
-            
-            var path: String = ""
-            path = Bundle.main.path(forResource:"MergeSort", ofType: "plist")!
-            dictData = NSDictionary(contentsOfFile: path)!
-            arrayKeys = dictData.allKeys as! [String]
-            ele = 0
-            arrayKeys = arrayKeys.sorted()
-//        }
-
+        ele = 0
+        for _ in arrayAction{
+            ele = ele + 1
+        }
+        textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
+                                                y: graph.frame.maxY + 20,
+                                                width: graph.frame.width - 40,
+                                                height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                  textContainer: nil)
+        
+        viewcontroller.view.addSubview(textStudy)
+        
+        textStudy.text = "Merge Sort is an arrangement algorithm for sorting lists (or any data structure that can be accessed sequentially, eg. the file stream) in a certain order."
+        updateTextFont()
+        
+        var path: String = ""
+        path = Bundle.main.path(forResource:"MergeSort", ofType: "plist")!
+        dictData = NSDictionary(contentsOfFile: path)!
+        arrayKeys = dictData.allKeys as! [String]
+        ele = 0
+        arrayKeys = arrayKeys.sorted()
+        
         
     }
     
@@ -145,42 +143,38 @@ class ManagerMergeSort {
         
     }
     @objc func step(sender: UIButton) {
-//        if(VIEW_CHOSEN=="study"){
-            if(ele==arrayKeys.count){
-                textStudy.text = ""
-                updateTextFont()
-                return
-            }
-            btnRunTmp.isUserInteractionEnabled = false
-            btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
-            btnRunTmp.setNeedsDisplay()
+        
+        if(ele==arrayKeys.count){
+            textStudy.text = ""
+            updateTextFont()
+            return
+        }
+        btnRunTmp.isUserInteractionEnabled = false
+        btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
+        btnRunTmp.setNeedsDisplay()
+        
+        if(arrayKeys[ele].isNumber){
+            btnStepTmp.isUserInteractionEnabled = false
+            let data = dictData[arrayKeys[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            animationStep.next()
+        }else if(arrayKeys[ele]=="end"){
+            textStudy.text = "The list is fully sorted"
+            updateTextFont()
+            btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
+            btnStepTmp.setNeedsDisplay()
+            btnStepTmp.isUserInteractionEnabled = false
             
-            if(arrayKeys[ele].isNumber){
-                btnStepTmp.isUserInteractionEnabled = false
-                let data = dictData[arrayKeys[ele]]
-                textStudy.text = data as! String?
-                updateTextFont()
-                animationStep.next()
-            }else if(arrayKeys[ele]=="end"){
-                textStudy.text = "The list is fully sorted"
-                updateTextFont()
-                btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
-                btnStepTmp.setNeedsDisplay()
-                btnStepTmp.isUserInteractionEnabled = false
-                
-            }else{
-                let data = dictData[arrayKeys[ele]]
-                textStudy.text = data as! String?
-                updateTextFont()
-                btnStepTmp.isUserInteractionEnabled = true
-                
-            }
-            ele = ele + 1
+        }else{
+            let data = dictData[arrayKeys[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            btnStepTmp.isUserInteractionEnabled = true
             
-//        }else{
-//            btnStepTmp.isUserInteractionEnabled = false
-//            btnRunTmp.isUserInteractionEnabled = false
-//            animationStep.next()
-//        }
+        }
+        ele = ele + 1
+        
+        
     }
 }

@@ -71,28 +71,25 @@ class ManagerSelectionSort {
         
         animateStep = AnimationSelection(arrayLabel: self.arrayLabel, arrayLabelMiddle: self.arrayLabelMiddle, arrayLabelAbove: self.arrayLabelAbove, arrayLabelBelow: self.arrayLabelBelow, arrayAction: self.arrayAction)
         
-//        if(VIEW_CHOSEN=="study"){
+        ele = 0
         
-            ele = 0
-            
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
-                                                    y: graph.frame.maxY + 20,
-                                                    width: graph.frame.width - 40,
-                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)),
-                                      textContainer:nil)
-            
-            viewcontroller.view.addSubview(textStudy)
-            
-            textStudy.text = "Selection sort is a sorting algorithm, specifically an in-place comparison sort.The algorithm divides the input list into two parts: the sublist of items already sorted and the sublist of items remaining to be sorted."
-            
-            updateTextFont()
-            
-            var path: String = ""
-            path = Bundle.main.path(forResource:"SelectionSort", ofType: "plist")!
-            dictData = NSDictionary(contentsOfFile: path)!
-            arrayKeys = dictData.allKeys as! [String]
-            arrayKeys = arrayKeys.sorted(by: {$0 < $1})
-//        }
+        textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x + 20,
+                                                y: graph.frame.maxY + 20,
+                                                width: graph.frame.width - 40,
+                                                height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                  textContainer:nil)
+        
+        viewcontroller.view.addSubview(textStudy)
+        
+        textStudy.text = "Selection sort is a sorting algorithm, specifically an in-place comparison sort.The algorithm divides the input list into two parts: the sublist of items already sorted and the sublist of items remaining to be sorted."
+        
+        updateTextFont()
+        
+        var path: String = ""
+        path = Bundle.main.path(forResource:"SelectionSort", ofType: "plist")!
+        dictData = NSDictionary(contentsOfFile: path)!
+        arrayKeys = dictData.allKeys as! [String]
+        arrayKeys = arrayKeys.sorted(by: {$0 < $1})
         
     }
     
@@ -133,42 +130,36 @@ class ManagerSelectionSort {
     
     @objc func step(sender: UIButton) {
         
-//        if(VIEW_CHOSEN=="study"){
-            if(ele==arrayKeys.count){
-                textStudy.text = ""
-                updateTextFont()
-                return
-            }
-            btnRunTmp.isUserInteractionEnabled = false
-            btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
-            btnRunTmp.setNeedsDisplay()
+        if(ele==arrayKeys.count){
+            textStudy.text = ""
+            updateTextFont()
+            return
+        }
+        btnRunTmp.isUserInteractionEnabled = false
+        btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
+        btnRunTmp.setNeedsDisplay()
+        
+        if(arrayKeys[ele].isNumber){
+            btnStepTmp.isUserInteractionEnabled = false
+            let data = dictData[arrayKeys[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            animateStep.next()
+        }else if(arrayKeys[ele]=="end"){
+            textStudy.text = "The list is fully sorted"
+            updateTextFont()
+            btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
+            btnStepTmp.setNeedsDisplay()
+            btnStepTmp.isUserInteractionEnabled = false
             
-            if(arrayKeys[ele].isNumber){
-                btnStepTmp.isUserInteractionEnabled = false
-                let data = dictData[arrayKeys[ele]]
-                textStudy.text = data as! String?
-                updateTextFont()
-                animateStep.next()
-            }else if(arrayKeys[ele]=="end"){
-                textStudy.text = "The list is fully sorted"
-                updateTextFont()
-                btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
-                btnStepTmp.setNeedsDisplay()
-                btnStepTmp.isUserInteractionEnabled = false
-                
-            }else{
-                let data = dictData[arrayKeys[ele]]
-                textStudy.text = data as! String?
-                updateTextFont()
-                btnStepTmp.isUserInteractionEnabled = true
-                
-            }
-            ele = ele + 1
+        }else{
+            let data = dictData[arrayKeys[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            btnStepTmp.isUserInteractionEnabled = true
             
-//        }else{
-//            btnStepTmp.isUserInteractionEnabled = false
-//            btnRunTmp.isUserInteractionEnabled = false
-//            animateStep.next()
-//        }
+        }
+        ele = ele + 1
+        
     }
 }

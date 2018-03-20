@@ -15,11 +15,11 @@ class DepthFirstSearch{
     var arrayAction: [DFS_Step]!
     init() {
         self.arrayAction = [DFS_Step]()
-
+        
         let adjacencyList = AdjacencyList<String>()
-
-
-
+        
+        
+        
         let s = adjacencyList.createVertex(data: "S")
         let a = adjacencyList.createVertex(data: "A")
         let b = adjacencyList.createVertex(data: "B")
@@ -29,7 +29,7 @@ class DepthFirstSearch{
         let g = adjacencyList.createVertex(data: "G")
         let e = adjacencyList.createVertex(data: "E")
         let i = adjacencyList.createVertex(data: "I")
-
+        
         adjacencyList.add(.undirected, from: s, to: a)
         adjacencyList.add(.undirected, from: a, to: b)
         adjacencyList.add(.undirected, from: a, to: d)
@@ -40,39 +40,41 @@ class DepthFirstSearch{
         adjacencyList.add(.undirected, from: d, to: g)
         adjacencyList.add(.undirected, from: d, to: f)
         adjacencyList.add(.undirected, from: f, to: e)
+        
+        depthFirstSearch(from: s, to: i, graph: adjacencyList)
     }
     func depthFirstSearch(from start: Vertex<String>, to end: Vertex<String>, graph: AdjacencyList<String>) -> Stack<Vertex<String>> {
         var visited = Set<Vertex<String>>()
         var stack = Stack<Vertex<String>>()
-
+        
         stack.push(start)
         visited.insert(start)
-
+        
         outer: while let vertex = stack.peek(), vertex != end {
-
+            
             guard let neighbours = graph.edges(from: vertex), neighbours.count > 0 else {
                 stack.pop()
                 self.arrayAction.append(DFS_Step(act: "back", to: stack.peekString))
                 continue
             }
-
+            
             for edge in neighbours {
                 if !visited.contains(edge.destination) {
                     visited.insert(edge.destination)
                     stack.push(edge.destination)
                     self.arrayAction.append(DFS_Step(act: "push", to: stack.peekString))
                     stack.description
-
-
+                    
+                    
                     continue outer
                 }
             }
-
+            
             stack.pop()
             self.arrayAction.append(DFS_Step(act: "back", to: stack.peekString))
             
         }
         return stack
     }
-
+    
 }

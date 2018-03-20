@@ -12,7 +12,7 @@ public class Node<T> {
     var value: T
     var next: Node<T>?
     weak var previous: Node<T>?
-
+    
     // 3
     init(value: T) {
         self.value = value
@@ -23,21 +23,21 @@ public class LinkedList<T> {
     fileprivate var head: Node<T>?
     private var tail: Node<T>?
     var valueNodeRemove:T!
-
+    
     public var isEmpty: Bool {
         return head == nil
     }
-
+    
     // 3. Change the return type to be a node constrained to type T
     public var first: Node<T>? {
         return head
     }
-
+    
     // 4. Change the return type to be a node constrained to type T
     public var last: Node<T>? {
         return tail
     }
-
+    
     // 5. Update the append function to take in a value of type T
     public func append(value: T) {
         let newNode = Node(value: value)
@@ -49,7 +49,7 @@ public class LinkedList<T> {
         }
         tail = newNode
     }
-
+    
     // 6. Update the nodeAt function to return a node constrained to type T
     public func nodeAt(index: Int) -> Node<T>? {
         if index >= 0 {
@@ -63,17 +63,17 @@ public class LinkedList<T> {
         }
         return nil
     }
-
+    
     public func removeAll() {
         head = nil
         tail = nil
     }
-
+    
     // 7. Update the parameter of the remove function to take a node of type T. Update the return value to type T.
     public func remove(node: Node<T>) -> T {
         let prev = node.previous
         let next = node.next
-
+        
         if let prev = prev {
             prev.next = next
         } else {

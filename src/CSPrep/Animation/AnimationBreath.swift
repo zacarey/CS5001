@@ -94,7 +94,7 @@ class AnimationBreath{
                 
                 self.arrayLabel[self.value].layer.backgroundColor = UIColor.green.withAlphaComponent(0.5).cgColor
                 self.arrayLabel[self.value].layer.borderColor = UIColor.black.cgColor
-
+                
                 self.arrayLabel[self.value].layer.setNeedsDisplay()
                 self.graph.arrayArrow[self.graph.arrowCorresponding(value: self.value)].fillColor = UIColor.black.cgColor
             }
@@ -167,7 +167,7 @@ class AnimationBreath{
             }
             else if (self.currentStep.act == "putOut" && self.nextSolution == false){
                 self.arrayLabel[self.value].layer.backgroundColor = UIColor.green.withAlphaComponent(0.5).cgColor
-                 self.arrayLabel[self.value].layer.borderColor = UIColor.black.cgColor
+                self.arrayLabel[self.value].layer.borderColor = UIColor.black.cgColor
                 self.arrayLabel[self.value].layer.setNeedsDisplay()
                 self.graph.arrayArrow[self.graph.arrowCorresponding(value: self.value)].fillColor = UIColor.black.cgColor
             }
@@ -185,15 +185,15 @@ class AnimationBreath{
         if(self.currentStep.act=="putOut"){
             self.arrayLabel[value].layer.backgroundColor = UIColor.green.withAlphaComponent(1).cgColor
             self.arrayLabel[value].layer.borderColor = UIColor.red.cgColor
-
+            
             self.arrayLabel[value].layer.setNeedsDisplay()
-
-                    }
+            
+        }
         else{
-
+            
             self.arrayLabel[value].layer.backgroundColor = UIColor.green.withAlphaComponent(0.5).cgColor
             self.arrayLabel[value].layer.setNeedsDisplay()
-
+            
             self.graph.arrayArrow[self.graph.arrowCorresponding(value: value)].fillColor = UIColor.green.cgColor
             
         }

@@ -306,7 +306,7 @@ class AnimationMerge:NSObject {
     func next(){
         self.currentStep = self.arrayAction[self.colSolution]
         if(!fistDraw){
-
+            
             self.borderRect(bearingPoint: (self.arrayLabelOne.first?.frame.origin)!, countCell: self.arrayLabel.count)
         }
         self.animationStep()
@@ -336,7 +336,7 @@ class AnimationMerge:NSObject {
         if (self.colSolution == self.arrayAction.count) {
             deleteBody()
             btnStepTmp.isUserInteractionEnabled = false
-
+            
             return
         }else{
             btnStepTmp.isUserInteractionEnabled = true
@@ -353,7 +353,7 @@ class AnimationMerge:NSObject {
         }
     }
     func borderRect(bearingPoint: CGPoint, countCell: Int){
-
+        
         let originPoint = CGPoint(x: bearingPoint.x - PADDING/2, y: bearingPoint.y - PADDING/2)
         let widthRect: CGFloat = CGFloat(countCell)*2*SPACING + CGFloat((countCell-1))*SPACING + 2*PADDING/2
         let heightRect : CGFloat = 2*SPACING + 1*PADDING
@@ -365,10 +365,10 @@ class AnimationMerge:NSObject {
         Slayer.lineWidth = 4
         let view = UIView(frame: drect)
         view.layer.addSublayer(Slayer)
-
+        
         self.graphMerge.insertSubview(view, at: 1)
         self.bodyRect?.append(view)
-
+        
         if(fistDraw){
             self.bodyLine?.append(straightLine(bearingPoint: originPoint, widtRectangle: widthRect))
         }
@@ -376,7 +376,7 @@ class AnimationMerge:NSObject {
     }
     
     func straightLine(bearingPoint: CGPoint,widtRectangle: CGFloat)->CAShapeLayer{
-
+        
         dem+=1
         DISTANCEROW = SPACING - PADDING
         let start = CGPoint(x: bearingPoint.x + widtRectangle/2, y: bearingPoint.y)

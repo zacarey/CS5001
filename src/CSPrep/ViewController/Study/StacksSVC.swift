@@ -9,7 +9,7 @@
 import UIKit
 
 class StacksSVC: StudyVC {
-
+    
     var manager: ManagerStacks!
     var labelPush: UILabel!
     var labelPop: UILabel!
@@ -76,8 +76,8 @@ class StacksSVC: StudyVC {
         labelTop.textAlignment = .center
         labelTop.layer.masksToBounds = true
         view.addSubview(labelTop)
-
+        
     }
-
+    
 }
 

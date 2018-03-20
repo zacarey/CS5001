@@ -18,7 +18,7 @@ class ManagerBinary{
     var animate: AnimarionBinary!
     var arrayAction: [BinaryStep]!
     var binary: BinarySearch!
-
+    
     var textStudy: DetailTxtView!
     var dictData = NSDictionary()
     var arayKey = [String]()
@@ -30,34 +30,31 @@ class ManagerBinary{
         graph = GraphLinearBinary(frame: CGRect(x: 32, y: (viewcontroller.navigationController?.navigationBar.frame.maxY)! + 20, width: viewcontroller.view.bounds.size.width - CGFloat(64), height: viewcontroller.view.bounds.size.width - CGFloat(64)))
         viewcontroller.view.addSubview(graph)
         
-         self.search = search
+        self.search = search
         self.arrayAction = getAction(arr: graph.arraySort)
-   
+        
         
         animate = AnimarionBinary(arrayLabel: graph.arrayLabel, graph: graph, arraySort: graph.arraySort, arrayAction: arrayAction)
         
-//        if(VIEW_CHOSEN=="study"){
+        textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x,
+                                                y: graph.frame.maxY + 20,
+                                                width: graph.frame.width,
+                                                height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                  textContainer: nil)
         
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x,
-                                                    y: graph.frame.maxY + 20,
-                                                    width: graph.frame.width,
-                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)),
-                                      textContainer: nil)
-            
-            viewcontroller.view.addSubview(textStudy)
-            
-            
-            
-            var path: String = ""
-            
-            path = Bundle.main.path(forResource:"Linear", ofType: "plist")!
-            dictData = NSDictionary(contentsOfFile: path)!
-            arayKey = dictData.allKeys as! [String]
-            
-            arayKey = arayKey.sorted(by: {$0 < $1})
-            ele = 0
-           
-//        }
+        viewcontroller.view.addSubview(textStudy)
+        
+        
+        
+        var path: String = ""
+        
+        path = Bundle.main.path(forResource:"Linear", ofType: "plist")!
+        dictData = NSDictionary(contentsOfFile: path)!
+        arayKey = dictData.allKeys as! [String]
+        
+        arayKey = arayKey.sorted(by: {$0 < $1})
+        ele = 0
+        
     }
     func getAction(arr: [Int]) -> [BinaryStep] {
         binary = BinarySearch(arrayInput: arr, search: search)
@@ -82,5 +79,5 @@ class ManagerBinary{
         btnRunTmp.setNeedsDisplay()
         btnStepTmp.setNeedsDisplay()
     }
-
+    
 }

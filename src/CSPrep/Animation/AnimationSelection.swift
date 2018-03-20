@@ -66,12 +66,6 @@ class AnimationSelection {
                 self.checkTime()
                 self.colSolution += 1
                 if (self.colSolution == self.arrayAction.count) {
-//                    if(VIEW_CHOSEN=="study"){
-//                        btnStepTmp.isUserInteractionEnabled = true
-//                    }else{
-//                        btnStepTmp.isUserInteractionEnabled = false
-//                    }
-                    
                     btnStepTmp.isUserInteractionEnabled = true
                     return
                 }
@@ -86,14 +80,9 @@ class AnimationSelection {
                     self.checkTime()
                     self.colSolution += 1
                     if (self.colSolution == self.arrayAction.count) {
-//                        if(VIEW_CHOSEN=="study"){
-//                            btnStepTmp.isUserInteractionEnabled = true
-//                        }else{
-//                            btnStepTmp.isUserInteractionEnabled = false
-//                        }
-                        
                         btnStepTmp.isUserInteractionEnabled = true
                         return
+                        
                     }
                     self.currentStep = self.arrayAction[self.colSolution]
                     btnStepTmp.isUserInteractionEnabled = true
@@ -115,14 +104,9 @@ class AnimationSelection {
                                 self.checkTime()
                                 self.colSolution += 1
                                 if (self.colSolution == self.arrayAction.count) {
-//                                    if(VIEW_CHOSEN=="study"){
-//                                        btnStepTmp.isUserInteractionEnabled = true
-//                                    }else{
-//                                        btnStepTmp.isUserInteractionEnabled = false
-//                                    }
-                                    
                                     btnStepTmp.isUserInteractionEnabled = true
                                     return
+                                    
                                 }
                                 self.currentStep = self.arrayAction[self.colSolution]
                                 btnStepTmp.isUserInteractionEnabled = true
@@ -137,14 +121,9 @@ class AnimationSelection {
                         self.checkTime()
                         self.colSolution += 1
                         if (self.colSolution == self.arrayAction.count) {
-//                            if(VIEW_CHOSEN=="study"){
-//                                btnStepTmp.isUserInteractionEnabled = true
-//                            }else{
-//                                btnStepTmp.isUserInteractionEnabled = false
-//                            }
-                            
                             btnStepTmp.isUserInteractionEnabled = true
                             return
+                            
                         }
                         self.currentStep = self.arrayAction[self.colSolution]
                         btnStepTmp.isUserInteractionEnabled = true

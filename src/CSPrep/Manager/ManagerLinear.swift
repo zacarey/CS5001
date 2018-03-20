@@ -35,27 +35,25 @@ class ManagerLinear {
         self.arrayAction = getAction(arr: graph.arrayFind)
         animate = AnimationLiear(arrayLabel: graph.arrayLabel, graph: graph, arrayAction: arrayAction)
         
-//        if(VIEW_CHOSEN=="study"){
         
-            textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x,
-                                                    y: graph.frame.maxY + 20,
-                                                    width: graph.frame.width,
-                                                    height: yMax-(graph.frame.origin.y+graph.frame.height)),
-                                      textContainer: nil)
-            
-            viewcontroller.view.addSubview(textStudy)
-            
-            var path: String = ""
-            
-            path = Bundle.main.path(forResource:"Linear", ofType: "plist")!
-            dictData = NSDictionary(contentsOfFile: path)!
-            arrayKey = dictData.allKeys as! [String]            
-            
-            arrayKey = arrayKey.sorted(by: {$0 < $1})
-            ele = 0
-            animate = AnimationLiear(arrayLabel: graph.arrayLabel, graph: graph, arrayAction: arrayAction)
-//        }
-
+        textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x,
+                                                y: graph.frame.maxY + 20,
+                                                width: graph.frame.width,
+                                                height: yMax-(graph.frame.origin.y+graph.frame.height)),
+                                  textContainer: nil)
+        
+        viewcontroller.view.addSubview(textStudy)
+        
+        var path: String = ""
+        
+        path = Bundle.main.path(forResource:"Linear", ofType: "plist")!
+        dictData = NSDictionary(contentsOfFile: path)!
+        arrayKey = dictData.allKeys as! [String]            
+        
+        arrayKey = arrayKey.sorted(by: {$0 < $1})
+        ele = 0
+        animate = AnimationLiear(arrayLabel: graph.arrayLabel, graph: graph, arrayAction: arrayAction)
+        
     }
     
     func getAction(arr: [Int]) -> [LinearStep] {

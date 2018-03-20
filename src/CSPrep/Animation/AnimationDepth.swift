@@ -26,54 +26,54 @@ class AnimationDepth{
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-   
+    
     func animation(){
         UIView.setAnimationsEnabled(true)
         UIView.animate(withDuration: 1, animations: {
-
+            
             switch self.currentStep.to{
-
+                
             case "A":
                 self.lastValue = self.value
                 self.value = 1
-                    self.setColorLabel(change: true)
-                    break
+                self.setColorLabel(change: true)
+                break
             case "B":
                 self.lastValue = self.value
                 self.value = 4;
                 self.setColorLabel(change: false)
-
-                    break;
+                
+                break;
             case "C":
                 self.lastValue = self.value
                 self.value = 6;
                 self.setColorLabel(change: false);
-
-                    break;
+                
+                break;
             case "D":
                 self.lastValue = self.value
                 self.value = 2;
                 self.setColorLabel(change: true);
-
-                    break;
+                
+                break;
             case "E":
                 self.lastValue = self.value
                 self.value = 7;
                 self.setColorLabel(change: false);
-
-                    break;
+                
+                break;
             case "F":
                 self.lastValue = self.value
                 self.value = 3;
                 self.setColorLabel(change: true);
-
-                    break;
+                
+                break;
             case "G":
                 self.lastValue = self.value
                 self.value = 5;
                 self.setColorLabel(change: false);
-
-                    break;
+                
+                break;
             default: break
             }
             
@@ -83,20 +83,20 @@ class AnimationDepth{
                 return
             }
             self.arrayLabel[self.value].layer.borderColor = UIColor.black.cgColor
-
+            
             self.currentStep = self.arrayAction[self.countSolution]
             self.animation()
-
+            
         }
     }
     
     func animationStep(){
         UIView.setAnimationsEnabled(true)
         UIView.animate(withDuration: 1, animations: {
-
+            
             switch self.currentStep.to{
-
-
+                
+                
             case "A":
                 self.lastValue = self.value
                 self.value = 1
@@ -151,7 +151,7 @@ class AnimationDepth{
             
         }
     }
-
+    
     func setColorLabel(change: Bool){
         if(change){
             self.arrayLabel[value].text = "\u{f00d}"
@@ -161,21 +161,21 @@ class AnimationDepth{
         self.arrayLabel[value].layer.borderColor = UIColor.red.cgColor
         self.arrayLabel[value].layer.setNeedsDisplay()
         if(self.currentStep.act=="push"){
-
+            
             self.graph.arrayArrow[self.graph.arrowCorresponding(value: value)].fillColor = UIColor.green.cgColor
         }
         else{
-
+            
             self.graph.arrayLabel[lastValue].alpha = 0.5
-
+            
             self.graph.arrayArrow[self.graph.arrowCorresponding(value: lastValue)].fillColor = UIColor.black.cgColor
-
+            
         }
-
-
-
+        
+        
+        
     }
-
+    
     func loop(){
         self.currentStep = arrayAction[countSolution]
         animation()
@@ -184,5 +184,5 @@ class AnimationDepth{
         self.currentStep = arrayAction[countSolution]
         animationStep()
     }
-
+    
 }

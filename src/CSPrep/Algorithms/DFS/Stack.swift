@@ -9,15 +9,15 @@
 import Foundation
 struct Stack<Element> {
     fileprivate var array: [Element] = []
-
+    
     mutating func push(_ element: Element) {
         array.append(element)
     }
-
+    
     mutating func pop() -> Element? {
         return array.popLast()
     }
-
+    
     func peek() -> Element? {
         return array.last
     }
@@ -27,8 +27,8 @@ extension Stack: CustomStringConvertible {
     var description: String {
         // 3
         let topDivider = "---Stack---"
-
-
+        
+        
         // 4
         let stackElements = array.map { "\($0)" }.reversed().joined(separator: "")
         // 5
@@ -36,8 +36,8 @@ extension Stack: CustomStringConvertible {
     }
     var peekString: String{
         return array.map { "\($0)" }.last!
-//        return array.map { "\($0)" }.
-//        return array.last as! String
-
+        //        return array.map { "\($0)" }.
+        //        return array.last as! String
+        
     }
 }

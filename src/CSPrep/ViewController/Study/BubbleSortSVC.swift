@@ -35,7 +35,7 @@ class BubbleSortSVC: StudyVC {
         resetApp()
         
     }
-
+    
     
     @objc func reset(sender:UIButton){
         resetApp()
