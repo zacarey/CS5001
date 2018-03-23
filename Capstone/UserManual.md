@@ -1,13 +1,18 @@
-User Manual
+# User Manual
+
+...
 
 System requirement: iOS 8.0 or later
 
-Description: CSPrep is an educational application that helps students in Computer Science to understand some basic algorithms and data structures. Animations and thorough explanations help you understand how the algorithms work. Users also can deepen their understanding by exploring the PDF files.
+### Description: 
 
-Users guide:
+CSPrep is an educational application that helps students in Computer Science to understand some basic algorithms and data structures. Animations and thorough explanations help you understand how the algorithms work. Users also can deepen their understanding by exploring the PDF files.
+
+## Guide:
+
 Here is the list of Algorithms and Data Structures:
 
- (img1)
+![figure1](https://github.com/zacarey/CS5001/tree/master/Capstone/Images/UserManual/figure-1.png)
  
  Users can easily tap to explore the topic. Here is an example of a topic:
  
