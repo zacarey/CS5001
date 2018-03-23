@@ -15,28 +15,28 @@ Here is the list of Algorithms and Data Structures:
  Users can easily tap to explore the topic. Here is an example of a topic:
  
  
- (img2)
+![this](Images/UserManual/figure-2.PNG)
  
  
  
- To comback home screen, tap the home button (home)
+ To comback home screen, tap the home button ![this](Images/UserManual/home.PNG)
  
  
- To reload the page, tap the reset button (reload)
+ To reload the page, tap the reset button ![this](Images/UserManual/reload.PNG)
  
  
  
- To see the animation step-by-step and to view the thorough explantions, constantly tap the forward button (step)
+ To see the animation step-by-step and to view the thorough explantions, constantly tap the forward button ![this](Images/UserManual/step.PNG)
  
  
- To see a full run of the algorithms, tap the auto play button (play)
+ To see a full run of the algorithms, tap the auto play button ![this](Images/UserManual/play.PNG)
  
  
  Note: Once you decide to see the animation step-by-step, the auto play button will be grey out  and you will not be able to use the auto play button until you tap the reset button.
 
-To access the PDF file for this topic, tap the top right button  
+To access the PDF file for this topic, tap the top right button ![this](Images/UserManual/settings.PNG)  
 
 Here is the view of Reading screen:
 
- 
+ ![this](Images/UserManual/doc-example.PNG)
  
