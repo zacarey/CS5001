@@ -1,22 +1,41 @@
+![this](Images/csprep.png)
+
+
 # User Manual
 
-System requirement: iOS 8.0 or later
+System Requirement: iOS 8.0 or later
 
 ## Description: 
 
-CSPrep is an educational application that helps students in Computer Science to understand some basic algorithms and data structures. Animations and thorough explanations help you understand how the algorithms work. Users also can deepen their understanding by exploring the PDF files.
+CSPrep is an educational application that helps students learn Computer Science through the use of animations, step-by-step descriptions, and wiki style documentation pages. CSPrep breaks down foundational concepts into easily digestible 
 
 ## Guide:
 
-Here is the list of Algorithms and Data Structures:
+Upon opening the app the user will enter the Home screen.
 
+Home screen
 ![this](Images/UserManual/figure-1.PNG)
  
- Users can easily tap to explore the topic. Here is an example of a topic:
+ The Home screen is simply a table of explorable topics which include:
  
+ * Bubble Sort
+ * Insertion Sort 
+ * Merge Sort
+ * Quick Sort
+ * Heap Sort
+ * Linear Search
+ * Binary Search
+ * Breadth-First Search
+ * Depth-First Search
+ * Linked List
+ * Queues
+ * Stacks
+ * Tower of Hanoi
  
+For instance, if a user taps Bubble Sort the following Concept View is displayed
+
+Bubble Sort
 ![this](Images/UserManual/figure-2.PNG)
- 
  
  
  To comback home screen, tap the home button ![this](Images/UserManual/home.PNG)
@@ -26,17 +45,16 @@ Here is the list of Algorithms and Data Structures:
  
  
  
- To see the animation step-by-step and to view the thorough explantions, constantly tap the forward button ![this](Images/UserManual/step.PNG)
+ To see the animation step-by-step and  view the process descriptions, consecutively tap the forward button ![this](Images/UserManual/step.PNG)
  
  
- To see a full run of the algorithms, tap the auto play button ![this](Images/UserManual/play.PNG)
+ To see a full run of the algorithm, tap the auto play button ![this](Images/UserManual/play.PNG)
  
  
- Note: Once you decide to see the animation step-by-step, the auto play button will be grey out  and you will not be able to use the auto play button until you tap the reset button.
+ Note: Once you decide to see the animation step-by-step, the auto play button will be greed out  and you will not be able to use the auto play button until you tap the reset button.
 
-To access the PDF file for this topic, tap the top right button ![this](Images/UserManual/settings.PNG)  
+To access the Concept's wiki, tap the settings button in the top right corner ![this](Images/UserManual/settings.PNG)  
 
-Here is the view of Reading screen:
-
+Concept View
  ![this](Images/UserManual/doc-example.PNG)
  
