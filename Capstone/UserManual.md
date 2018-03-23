@@ -56,3 +56,12 @@ To access the Concept's wiki, tap the settings button in the top right corner ![
 
  ![this](Images/UserManual/doc-example.PNG)
  
+ 
+ ## FAQ
+ 
+ How can I download CSPrep?
+ By simply searching "CSPrep" in the App Store on a iPhone or iPad device.
+ 
+ How much does it cost?
+ It's free!
+ 
