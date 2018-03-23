@@ -13,8 +13,8 @@ CSPrep is an educational application that helps students learn Computer Science 
 
 Upon opening the app the user will enter the Home screen.
 
-Home screen
 ![this](Images/UserManual/figure-1.PNG)
+
  
  The Home screen is simply a table of explorable topics which include:
  
@@ -34,7 +34,6 @@ Home screen
  
 For instance, if a user taps Bubble Sort the following Concept View is displayed
 
-Bubble Sort
 ![this](Images/UserManual/figure-2.PNG)
  
  
@@ -55,6 +54,5 @@ Bubble Sort
 
 To access the Concept's wiki, tap the settings button in the top right corner ![this](Images/UserManual/settings.PNG)  
 
-Concept View
  ![this](Images/UserManual/doc-example.PNG)
  
