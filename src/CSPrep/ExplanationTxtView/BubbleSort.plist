@@ -3,37 +3,51 @@
 <plist version="1.0">
 <dict>
 	<key>11</key>
-	<string>First, &quot;4&quot; and &quot;1&quot; are compared. &quot;4&quot; is greater than &quot;1&quot; </string>
+	<string>First, &quot;4&quot; and &quot;3&quot; are compared. &quot;4&quot; is greater than &quot;3&quot;.</string>
 	<key>12</key>
-	<string>Therefore, &quot;4&quot; is swapped with &quot;1&quot;. Now, the number on the left is smaller than the number on the right</string>
+	<string>Therefore, &quot;4&quot; is swapped with &quot;3&quot;. Now, the number on the left is smaller than the number on the right.</string>
 	<key>13</key>
-	<string>Now, we continue &quot;bubbling&quot; to the right and compare &quot;4&quot; with &quot;9&quot;. This time &quot;4&quot; is smaller than &quot;9&quot;, so the numbers don&apos;t get swapped.</string>
+	<string>Now, we continue &quot;bubbling&quot; to the right and compare &quot;4&quot; with &quot;2&quot;. </string>
 	<key>14</key>
-	<string>Again, we &quot;bubble&quot; to the right and compare &quot;9&quot; with &quot;2&quot;</string>
+	<string>&quot;4&quot; is greater than &quot;2&quot;, so these numbers get swapped.</string>
 	<key>15</key>
-	<string>The number on the left, which is &quot;9&quot;, is greater than the number on the right, which is &quot;2&quot;. Therefore, the numbers get swapped.</string>
+	<string>This time &quot;4&quot; is smaller than &quot;7&quot;, so no swap is needed.</string>
 	<key>16</key>
-	<string>Then, &quot;9&quot; is compared with &quot;5&quot;.</string>
+	<string>Continue bubbling to the right and compare &quot;7&quot; and &quot;0&quot;. </string>
 	<key>17</key>
 	<string>Obviously, these numbers need to be swapped.</string>
-	<key>17.1</key>
-	<string>Now, we reach end of the list, &quot;9&quot; is in correct position</string>
-	<key>17.2</key>
-	<string>Next step, we come back to the front of the list and repeat the &quot;bubbling&quot; operation.</string>
 	<key>18</key>
-	<string>&quot;1&quot; and &quot;4&quot; are compared. </string>
+	<string>&quot;7&quot; is compared to &quot;8&quot;. We do not need to swap these two numbers. </string>
+	<key>18.1</key>
+	<string>Now, we have reach the right end of the list. In one round of operations, the greatest number in the list has moved to the right end and is in a correct position.</string>
 	<key>19</key>
-	<string>Then, &quot;4&quot; and &quot;2&quot; are compared</string>
+	<string>Next step, we come back to the front of the list and repeat the &quot;bubbling&quot; operation. This time, &quot;3&quot; is compared to &quot;2&quot;.</string>
 	<key>20</key>
-	<string>Swap &quot;4&quot; with &quot;2&quot;</string>
+	<string>Swap &quot;3&quot; with &quot;2&quot;.</string>
 	<key>21</key>
-	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<string>&quot;3&quot; and &quot;4&quot; are now compared to each other. They are in the right order so no swap is needed.</string>
 	<key>22</key>
-	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<string>Compare &quot;4&quot; and &quot;0&quot;.</string>
 	<key>23</key>
-	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<string>Swap &quot;4&quot; and &quot;0&quot;.</string>
 	<key>24</key>
-	<string>The same operations are repeated until all of the numbers are fully sorted</string>
+	<string>Compare &quot;4&quot; and &quot;7&quot;. No swap is needed. Now, &quot;7&quot; is in correct position.</string>
+	<key>25</key>
+	<string>We comeback to the front of the list and compare &quot;2&quot; and &quot;3&quot;. No swap is needed.</string>
+	<key>26</key>
+	<string>Compare &quot;3&quot; and &quot;0&quot;.</string>
+	<key>27</key>
+	<string>Swap &quot;3&quot; and &quot;0&quot;.</string>
+	<key>28</key>
+	<string>Compare &quot;3&quot; and &quot;4&quot;. No swap is needed. Now, &quot;4&quot; is in correct position.</string>
+	<key>29</key>
+	<string>Back to the front of the list and compare &quot;2&quot; and &quot;0&quot;.</string>
+	<key>30</key>
+	<string>Swap &quot;2&quot; and &quot;0&quot;.</string>
+	<key>31</key>
+	<string>Compare &quot;2&quot; and &quot;3&quot;. No swap is needed. Now, &quot;3&quot; is in correct position.</string>
+	<key>32</key>
+	<string>Compare &quot;0&quot; and &quot;2&quot;. No swap is needed. Now, &quot;0&quot; and &quot;2&quot; are in correct positions.</string>
 	<key>end</key>
 	<string></string>
 </dict>

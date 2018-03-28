@@ -81,7 +81,7 @@ class ManagerSelectionSort {
         
         viewcontroller.view.addSubview(textStudy)
         
-        textStudy.text = "Selection sort is a sorting algorithm, specifically an in-place comparison sort.The algorithm divides the input list into two parts: the sublist of items already sorted and the sublist of items remaining to be sorted."
+        textStudy.text = "Selection sort divides the input list into two sublists: one for sorted items and one for the remaining items need to be sorted. Linear search is used in the unsorted sublist to find the smallest item and swap it with the left most item in the sublist. This process is repeated until no swaps are needed."
         
         updateTextFont()
         

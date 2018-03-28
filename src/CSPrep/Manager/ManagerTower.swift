@@ -113,7 +113,7 @@ class ManagerTower {
             textStudy.text = data as! String?
             updateTextFont()
         }else if(arrayKeys[ele].integerValue==11){
-            if(arrayKeys[ele].characters.count<5){
+            if(arrayKeys[ele].count<5){
                 // thuc hien animation
                 btnStepTmp.isUserInteractionEnabled = false
                 let _step  = String((arrayKeys[ele].floatValue!-11)*10)

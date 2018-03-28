@@ -20,7 +20,7 @@ class BubbleSortSVC: StudyVC {
         title = "Bubble Sort"
         
         self.managerSort = ManagerBubbleSort()
-        self.managerSort.initSortWith(viewcontroller: self, arrayInput: [4,3,2,7,6,0,8])
+        self.managerSort.initSortWith(viewcontroller: self, arrayInput: [4,3,2,7,0,8])
         
         btnRun.addTarget(self.managerSort, action: #selector(managerSort.run(sender:)), for: .touchUpInside)
         
@@ -50,7 +50,7 @@ class BubbleSortSVC: StudyVC {
         btnStep.layer.backgroundColor = LIME_COLOR.cgColor
         btnRun.setNeedsDisplay()
         btnStep.setNeedsDisplay()
-        managerSort.initSortWith(viewcontroller: self, arrayInput: [4,3,2,7,6,0,8])
+        managerSort.initSortWith(viewcontroller: self, arrayInput: [4,3,2,7,0,8])
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -43,7 +43,10 @@ class DepthFirstSearch{
         
         depthFirstSearch(from: s, to: i, graph: adjacencyList)
     }
-    func depthFirstSearch(from start: Vertex<String>, to end: Vertex<String>, graph: AdjacencyList<String>) -> Stack<Vertex<String>> {
+    
+//    func depthFirstSearch(from start: Vertex<String>, to end: Vertex<String>, graph: AdjacencyList<String>) -> Stack<Vertex<String>> {
+    
+    func depthFirstSearch(from start: Vertex<String>, to end: Vertex<String>, graph: AdjacencyList<String>) {
         var visited = Set<Vertex<String>>()
         var stack = Stack<Vertex<String>>()
         
@@ -74,7 +77,7 @@ class DepthFirstSearch{
             self.arrayAction.append(DFS_Step(act: "back", to: stack.peekString))
             
         }
-        return stack
+//        return stack
     }
     
 }

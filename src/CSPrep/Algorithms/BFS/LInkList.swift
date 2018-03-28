@@ -70,7 +70,9 @@ public class LinkedList<T> {
     }
     
     // 7. Update the parameter of the remove function to take a node of type T. Update the return value to type T.
-    public func remove(node: Node<T>) -> T {
+//    public func remove(node: Node<T>) -> T {
+        public func remove(node: Node<T>) {
+
         let prev = node.previous
         let next = node.next
         
@@ -88,7 +90,7 @@ public class LinkedList<T> {
         node.previous = nil
         node.next = nil
         valueNodeRemove = node.value
-        return node.value
+//        return node.value
     }
 }
 extension LinkedList: CustomStringConvertible {
