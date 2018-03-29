@@ -146,7 +146,7 @@ class ManagerSelectionSort {
             updateTextFont()
             animateStep.next()
         }else if(arrayKeys[ele]=="end"){
-            textStudy.text = "The list is fully sorted"
+            textStudy.text = "The list is fully sorted."
             updateTextFont()
             btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
             btnStepTmp.setNeedsDisplay()

@@ -3,33 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>01</key>
-	<string>First, the list is divided into two sub-lists.</string>
+	<string>First, the list is divided into two sublists.</string>
 	<key>02</key>
-	<string>Continue to divide the sub-list to the left into halves.</string>
+	<string>Continue to divide the sublist to the left into halves.</string>
 	<key>03</key>
-	<string>When the number of elements of the sub-list is one, the division is complete.</string>
-	<key>03.1</key>
-	<string>Now, two child sub-list are combined. </string>
+	<string>When the number of elements of the sublist is one, the division is complete.</string>
 	<key>04</key>
-	<string>While being combined, these two numbers are put in order from smallest to largest.</string>
+	<string>Now, two child sublists are combined. While being combined, these numbers are put in order from smallest to largest.</string>
 	<key>05</key>
-	<string>Continue to divide the sub-list to the right into halves.</string>
+	<string>Continue to merge the two sublists on the left.</string>
 	<key>06</key>
-	<string>Then, two child sub-lists are merged.</string>
-	<key>06.1</key>
-	<string>Now, two groups of multiple numbers need to be combined.</string>
+	<string>Again, divide the sublist to the right into halves.</string>
 	<key>07</key>
-	<string>The numbers from these two groups are arranged so that they are ordered from smallest to largest after combination.</string>
+	<string>When the number of elements of the sublist is one, the division is complete.</string>
 	<key>08</key>
-	<string>The same operation is applied onto the other sub-list.</string>
+	<string>Now, two child sublists are combined. </string>
 	<key>09</key>
-	<string>Continue to divide the sub-lists and merge them together.</string>
+	<string>Continue to merge the two sublists on the right.</string>
 	<key>10</key>
-	<string>Continue to divide the sub-lists and merge them together.</string>
-	<key>11</key>
-	<string>Continue to divide the sub-lists and merge them together.</string>
-	<key>12</key>
-	<string>Continue to divide the sub-lists and merge them together.</string>
+	<string>Continue to merge the two child sublists until we have a fully sorted list.</string>
 	<key>end</key>
 	<string></string>
 </dict>

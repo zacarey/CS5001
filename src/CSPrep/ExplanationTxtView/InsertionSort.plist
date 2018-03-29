@@ -2,54 +2,56 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>00.1</key>
-	<string>Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list.</string>
-	<key>00.2</key>
-	<string>Each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there.</string>
-	<key>00.3</key>
-	<string>It repeats until no input elements remain.</string>
 	<key>00.4</key>
 	<string>To begin, the first number is considered fully sorted and is placed in the sorted list.</string>
 	<key>01</key>
-	<string>The first number of the remaining list (unsorted list) is taken out,...</string>
-	<key>01.1</key>
-	<string>and compared to the number to its left.</string>
+	<string>The first number of the remaining list (unsorted list) is taken out, and compared to the number to its left.</string>
 	<key>02</key>
-	<string>&quot;9&quot; is greater than &quot;4&quot;,...</string>
-	<key>02.1</key>
-	<string>so &quot;9&quot; is inserted behind &quot;4&quot; in the sorted list.</string>
+	<string>&quot;3&quot; is smaller than &quot;4&quot;, ...</string>
 	<key>03</key>
-	<string>Again, the first number of the unsorted list, which is &quot;1&quot;, is taken out,...</string>
+	<string>so &quot;3&quot; is inserted before &quot;4&quot; in the sorted list.</string>
 	<key>04</key>
-	<string>and compared to the number to its left.</string>
+	<string>so &quot;3&quot; is inserted before &quot;4&quot; in the sorted list.</string>
 	<key>05</key>
-	<string>&quot;1&quot; is less than &quot;9&quot;, so &quot;1&quot; moves to the left of &quot;9&quot;.</string>
+	<string>Again, the first number of the unsorted list, which is &quot;2&quot;, is taken out and compared to its left. </string>
 	<key>06</key>
-	<string>Now, &quot;1&quot; is compared to &quot;4&quot;,...</string>
+	<string>&quot;2&quot; is smaller than &quot;4&quot;, ...</string>
 	<key>07</key>
-	<string>since &quot;1&quot; is less than &quot;4&quot;, &quot;1&quot; is inserted to the left of &quot;4&quot; in the sorted list.</string>
+	<string>so &quot;2&quot; should be inserted before &quot;4&quot;. Now, &quot;2&quot; is compared to the next number in the sorted list, which is &quot;3&quot;.</string>
 	<key>08</key>
-	<string>The same operations is repeated.</string>
+	<string>&quot;2&quot; is smaller than &quot;3&quot;, ...</string>
 	<key>09</key>
-	<string>The same operations is repeated.</string>
+	<string>so &quot;2&quot; is inserted before &quot;3&quot; in the sorted list. </string>
 	<key>10</key>
-	<string>The same operations is repeated.</string>
+	<string>so &quot;2&quot; is inserted before &quot;3&quot; in the sorted list. </string>
 	<key>11</key>
-	<string>The same operations is repeated.</string>
+	<string>Again, the first number of the unsorted list, which is &quot;7&quot;, is taken out and compared to its left. </string>
 	<key>12</key>
-	<string>The same operations is repeated.</string>
+	<string>&quot;7&quot; is greater than &quot;4&quot;, so &quot;7&quot; is inserted after &quot;4&quot; in the sorted list.</string>
 	<key>13</key>
-	<string>The same operations is repeated.</string>
+	<string>Again, the first number of the unsorted list, which is &quot;0&quot;, is taken out and compared to its left. </string>
 	<key>14</key>
-	<string>The same operations is repeated.</string>
+	<string>&quot;0&quot; is smaller than &quot;7&quot;, ...</string>
 	<key>15</key>
-	<string>The same operations is repeated.</string>
+	<string>so &quot;0&quot; should be inserted before &quot;7&quot;. Now, &quot;0&quot; is compared to the next number in the unsorted list, which is &quot; 4&quot;.</string>
 	<key>16</key>
-	<string>The same operations is repeated.</string>
+	<string>&quot;0&quot; is smaller than &quot;4&quot;, ...</string>
 	<key>17</key>
-	<string>The same operations is repeated.</string>
+	<string>so &quot;0&quot; should be inserted before &quot;4&quot;. Now, &quot;0&quot; is compared to the next number in the unsorted list, which is &quot; 3&quot;.</string>
 	<key>18</key>
-	<string>The same operations is repeated.</string>
+	<string>&quot;0&quot; is smaller than &quot;3&quot;, ...</string>
+	<key>19</key>
+	<string>so &quot;0&quot; should be inserted before &quot;3&quot;. Now, &quot;0&quot; is compared to the next number in the unsorted list, which is &quot; 2&quot;.</string>
+	<key>20</key>
+	<string>&quot;0&quot; is smaller than &quot;2&quot;, ...</string>
+	<key>21</key>
+	<string>so &quot;0&quot; is inserted before &quot;2&quot; in the sorted list.</string>
+	<key>22</key>
+	<string>so &quot;0&quot; is inserted before &quot;2&quot; in the sorted list.</string>
+	<key>23</key>
+	<string>Again, the first number of the unsorted list, which is &quot;8&quot;, is taken out and compared to its left. </string>
+	<key>24</key>
+	<string>&quot;8&quot; is greater than &quot;7&quot;, so &quot;8&quot; is inserted after &quot;7&quot; in the sorted list.</string>
 	<key>end</key>
 	<string></string>
 </dict>

@@ -92,7 +92,7 @@ class ManagerMergeSort {
         
         viewcontroller.view.addSubview(textStudy)
         
-        textStudy.text = "Merge Sort is an arrangement algorithm for sorting lists (or any data structure that can be accessed sequentially, eg. the file stream) in a certain order."
+        textStudy.text = "Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves."
         updateTextFont()
         
         var path: String = ""
@@ -160,7 +160,7 @@ class ManagerMergeSort {
             updateTextFont()
             animationStep.next()
         }else if(arrayKeys[ele]=="end"){
-            textStudy.text = "The list is fully sorted"
+            textStudy.text = "The list is fully sorted."
             updateTextFont()
             btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
             btnStepTmp.setNeedsDisplay()

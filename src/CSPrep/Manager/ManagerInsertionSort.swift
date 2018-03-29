@@ -79,7 +79,7 @@ class ManagerInsertionSort {
                                   textContainer: nil)
         
         viewcontroller.view.addSubview(textStudy)
-        textStudy.text = "Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. "
+        textStudy.text = "Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain."
         
         updateTextFont()
         var path: String = ""
@@ -147,7 +147,7 @@ class ManagerInsertionSort {
             updateTextFont()
             animateStep.next()
         }else if(arrayKeys[ele]=="end"){
-            textStudy.text = "The list is fully sorted"
+            textStudy.text = "The list is fully sorted."
             updateTextFont()
             btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
             btnStepTmp.setNeedsDisplay()

@@ -825,6 +825,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J9S8PE2GW;
 				INFOPLIST_FILE = CSPrep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LocTran.CSPrep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -841,6 +842,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J9S8PE2GW;
 				INFOPLIST_FILE = CSPrep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LocTran.CSPrep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
