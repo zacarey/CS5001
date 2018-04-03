@@ -21,7 +21,6 @@ class LinearSVC: StudyVC {
         manager = ManagerLinear()
         
         search = Int(arc4random_uniform(36)) + 1
-        print(search)
     
         manager.initLinear(viewcontroller: self, search: search)
         btnRun.addTarget(self.manager, action: #selector(manager.run(sender:)), for: .touchUpInside)

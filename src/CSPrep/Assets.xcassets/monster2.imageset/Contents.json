@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "monster2_24.png",
+      "filename" : "letter-b24.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "monster2.png",
+      "filename" : "letter-b32.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "monster2_64.png",
+      "filename" : "letter-b64.png",
       "scale" : "3x"
     }
   ],

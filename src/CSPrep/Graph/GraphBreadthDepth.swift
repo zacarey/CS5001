@@ -37,6 +37,11 @@ class GraphBreadthDepth: UIView {
         let attachmentMinerString = NSAttributedString(attachment: attachmentMiner)
         labelMiner.attributedText = attachmentMinerString
         labelMiner.textAlignment = .center
+        labelMiner.layer.masksToBounds = true
+        labelMiner.layer.cornerRadius = rectSize/4
+        labelMiner.clipsToBounds = true
+        labelMiner.layer.borderWidth = 2
+        labelMiner.layer.borderColor = UIColor.black.cgColor
         arrayLabel.append(labelMiner)
         self.addSubview(labelMiner)
         
@@ -49,7 +54,7 @@ class GraphBreadthDepth: UIView {
             
             let attachment = NSTextAttachment()
             attachment.image = UIImage(named: "monster2")
-            attachment.bounds = CGRect(x: 0, y: 0, width: rectSize/2, height: rectSize/2)
+            attachment.bounds = CGRect(x: 0, y: 0, width: rectSize, height: rectSize/2)
             let attachmentString = NSAttributedString(attachment: attachment)
             label.attributedText = attachmentString
             label.textAlignment = .center
@@ -68,7 +73,7 @@ class GraphBreadthDepth: UIView {
             let labelBG = SortingLabel(frame: CGRect(x: spacing, y: CGFloat(2+i)*frame.height/5, width: rectSize, height: rectSize/2))
             let attachmentChest = NSTextAttachment()
             attachmentChest.image = UIImage(named: "stop")
-            attachmentChest.bounds = CGRect(x: 0, y: 0, width: rectSize/3, height: rectSize/3)
+            attachmentChest.bounds = CGRect(x: 0, y: 0, width: rectSize, height: rectSize/2)
             let attachmentChestString = NSAttributedString(attachment: attachmentChest)
             labelBG.attributedText = attachmentChestString
             labelBG.textAlignment = .center
@@ -86,7 +91,7 @@ class GraphBreadthDepth: UIView {
         let labelC = SortingLabel(frame: CGRect(x: frame.width-spacing-rectSize, y:frame.height*2/5, width: rectSize, height: rectSize/2))
         let attachmentC = NSTextAttachment()
         attachmentC.image = UIImage(named: "stop")
-        attachmentC.bounds = CGRect(x: 0, y: 0, width: rectSize/3, height: rectSize/3)
+        attachmentC.bounds = CGRect(x: 0, y: 0, width: rectSize, height: rectSize/2)
         let attachmentCString = NSAttributedString(attachment: attachmentC)
         labelC.attributedText = attachmentCString
         labelC.textAlignment = .center
@@ -103,7 +108,7 @@ class GraphBreadthDepth: UIView {
         let labelE = SortingLabel(frame: CGRect(x: 2*spacing+rectSize, y:frame.height*4/5, width: rectSize, height: rectSize/2))
         let attachmentChest = NSTextAttachment()
         attachmentChest.image = UIImage(named: "chest")
-        attachmentChest.bounds = CGRect(x: 0, y: 0, width: rectSize/2, height: rectSize/2)
+        attachmentChest.bounds = CGRect(x: 0, y: 0, width: rectSize, height: rectSize/2)
         let attachmentChestString = NSAttributedString(attachment: attachmentChest)
         labelE.attributedText = attachmentChestString
         labelE.textAlignment = .center

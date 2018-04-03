@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class GraphLinearBinary: UIView {
     
     var arrayLabel: [SortingLabel]!
@@ -28,7 +30,8 @@ class GraphLinearBinary: UIView {
     }
     
     func drawBoard(){
-        let cellSize = frame.width/6
+        let cellSize = self.frame.width/6
+        print("----------\(self.frame.width)---------")
         for i in 1..<37{
             var int: Int!
             int = i

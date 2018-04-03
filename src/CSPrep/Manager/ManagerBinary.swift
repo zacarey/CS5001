@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 
+
 class ManagerBinary{
     
     var viewcontroller: UIViewController!
@@ -27,7 +28,23 @@ class ManagerBinary{
     
     func initBinary(viewcontroller: UIViewController, search: Int){
         
-        graph = GraphLinearBinary(frame: CGRect(x: 32, y: (viewcontroller.navigationController?.navigationBar.frame.maxY)! + 20, width: viewcontroller.view.bounds.size.width - CGFloat(64), height: viewcontroller.view.bounds.size.width - CGFloat(64)))
+        switch UIDevice.current.userInterfaceIdiom {
+        case .phone:
+            // It's an iPhone
+            graph = GraphLinearBinary(frame: CGRect(x: 32, y: (viewcontroller.navigationController?.navigationBar.frame.maxY)! + 20, width: viewcontroller.view.bounds.size.width - CGFloat(64), height: viewcontroller.view.bounds.size.width - CGFloat(64)))
+            
+        case .pad:
+            // It's an iPad
+            graph = GraphLinearBinary(frame: CGRect(x: viewcontroller.view.bounds.size.width/2 - viewcontroller.view.bounds.size.height/4, y: (viewcontroller.navigationController?.navigationBar.frame.maxY)! + 20, width: viewcontroller.view.bounds.size.height/2, height: viewcontroller.view.bounds.size.height/2))
+            
+        case .unspecified:
+            return
+        case .tv:
+            return
+        case .carPlay:
+            return
+        }
+        
         viewcontroller.view.addSubview(graph)
         
         self.search = search

@@ -14,7 +14,7 @@ class MasterTableViewController: UITableViewController {
     
     let algo = [
         ["Bubble Sort","Selection Sort","Insertion Sort","Merge Sort","Quick Sort","Heap Sort"],
-        ["Linear Search","Binary Search","Breadth-First Search","Depth-First Search"],
+        ["Linear Search","Binary Search"],
         ["Linked List","Queues","Stacks"],
         ["Tower Of Hanoi"]
     ]
@@ -92,10 +92,10 @@ class MasterTableViewController: UITableViewController {
                 studyVC = LinearSVC() as UIViewController
             case 1:
                 studyVC = BinarySVC() as UIViewController
-            case 2:
-                studyVC = BreadthSVC() as UIViewController
-            case 3:
-                studyVC = DepthSVC() as UIViewController
+//            case 2:
+//                studyVC = BreadthSVC() as UIViewController
+//            case 3:
+//                studyVC = DepthSVC() as UIViewController
             default:
                 break
             }
