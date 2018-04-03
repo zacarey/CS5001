@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>00.1</key>
+	<string>Search: 34</string>
+	<key>01</key>
+	<string>First, we need to sort the array.</string>
+	<key>02</key>
+	<string>Then, we look at the number in the center of the array. In this case  it&apos;s 19.</string>
+	<key>02.1</key>
+	<string>We compare 19 to the number 34 that we are searching for. Because 19 is less than 34, we know that the number 34 is to the right of 19. We can remove numbers that are no longer needed.</string>
+	<key>03</key>
+	<string>Again we look at the number in the center of the remaining array. This time it&apos;s 28.</string>
+	<key>03.1</key>
+	<string>We compare 28 to the number 34 that we are searching for. Because 28 is less than 34, we know that the number 34 is to the right of 28. We can remove numbers that are no longer needed.</string>
+	<key>04</key>
+	<string>Again we look at the number in the center of the remaining array. This time it&apos;s 33.</string>
+	<key>04.1</key>
+	<string>We compare 33 to the number 34 that we are searching for. Because 33 is less than 34, we know that the number 34 is to the right of 33. We can remove numbers that are no longer needed.</string>
+	<key>05</key>
+	<string>Again we look at the number in the center of the remaining array. This time it&apos;s 35.</string>
+	<key>05.1</key>
+	<string>We compare 35 to the number 34 that we are searching for. Because 35 is greater than 34, we know that the number 34 is to the left of 35. We can remove numbers that are no longer needed.</string>
+	<key>06</key>
+	<string>Now, only number 34 left in the list.</string>
+	<key>end</key>
+	<string></string>
+</dict>
+</plist>

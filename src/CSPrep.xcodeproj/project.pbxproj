@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19114F7A20732AED00D2E685 /* Binary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19114F7920732AED00D2E685 /* Binary.plist */; };
 		191EF3CB205D2E780096FF8B /* SelectionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 191EF3CA205D2E780096FF8B /* SelectionSort.plist */; };
 		191EF3CD205D301C0096FF8B /* InsertionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 191EF3CC205D301C0096FF8B /* InsertionSort.plist */; };
 		191EF3CF205D30240096FF8B /* MergeSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 191EF3CE205D30240096FF8B /* MergeSort.plist */; };
@@ -112,6 +113,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19114F7920732AED00D2E685 /* Binary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Binary.plist; sourceTree = "<group>"; };
 		191EF3CA205D2E780096FF8B /* SelectionSort.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SelectionSort.plist; sourceTree = "<group>"; };
 		191EF3CC205D301C0096FF8B /* InsertionSort.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InsertionSort.plist; sourceTree = "<group>"; };
 		191EF3CE205D30240096FF8B /* MergeSort.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MergeSort.plist; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 				191EF3D0205D30340096FF8B /* QuickSort.plist */,
 				191EF3D2205D30410096FF8B /* HeapSort.plist */,
 				191EF3D4205D30530096FF8B /* Linear.plist */,
+				19114F7920732AED00D2E685 /* Binary.plist */,
 				191EF3D6205D306D0096FF8B /* LinkList.plist */,
 				191EF3D8205D30720096FF8B /* Stacks.plist */,
 				191EF3DA205D307C0096FF8B /* Queues.plist */,
@@ -546,6 +549,7 @@
 				191EF3CD205D301C0096FF8B /* InsertionSort.plist in Resources */,
 				191EF3E1205D466B0096FF8B /* Insertion Sort.pdf in Resources */,
 				192BE5DA205C59A600700502 /* Bubble Sort.pdf in Resources */,
+				19114F7A20732AED00D2E685 /* Binary.plist in Resources */,
 				192BE5D4205AD95000700502 /* BubbleSort.plist in Resources */,
 				192BE5BF205A366900700502 /* FontAwesome.otf in Resources */,
 			);

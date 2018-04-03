@@ -36,6 +36,11 @@ class ManagerBinary{
         
         animate = AnimarionBinary(arrayLabel: graph.arrayLabel, graph: graph, arraySort: graph.arraySort, arrayAction: arrayAction)
         
+        ele = 0
+        for _ in arrayAction{
+            ele = ele + 1
+        }
+        
         textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x,
                                                 y: graph.frame.maxY + 20,
                                                 width: graph.frame.width,
@@ -44,17 +49,38 @@ class ManagerBinary{
         
         viewcontroller.view.addSubview(textStudy)
         
-        
-        
+        textStudy.text = "Binary Search is an algorithm for searching through elements of an array"
+        updateTextFont()
         var path: String = ""
         
-        path = Bundle.main.path(forResource:"Linear", ofType: "plist")!
+        path = Bundle.main.path(forResource:"Binary", ofType: "plist")!
         dictData = NSDictionary(contentsOfFile: path)!
         arayKey = dictData.allKeys as! [String]
-        
-        arayKey = arayKey.sorted(by: {$0 < $1})
         ele = 0
+        arayKey = arayKey.sorted()
         
+        
+    }
+    
+    func updateTextFont() {
+        if (textStudy.text.isEmpty || textStudy.bounds.size.equalTo(CGSize.zero)) {
+            return;
+        }
+        
+        let textViewSize = textStudy.frame.size;
+        let fixedWidth = textViewSize.width;
+        let expectSize = textStudy.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)))
+        
+        var expectFont = textStudy.font
+        if (expectSize.height > textViewSize.height) {
+            while (textStudy.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT))).height > textViewSize.height) {
+                expectFont = textStudy.font!.withSize(textStudy.font!.pointSize - 1)
+                textStudy.font = expectFont
+            }
+        }
+        else {
+            return
+        }
     }
     func getAction(arr: [Int]) -> [BinaryStep] {
         binary = BinarySearch(arrayInput: arr, search: search)
@@ -62,7 +88,7 @@ class ManagerBinary{
     }
     
     @objc func run(sender: UIButton){
-        textStudy.text = "Sap xep lai mang \nTim kiem so: \(search!)"
+        textStudy.text = "Search: \(search!)"
         animate.loop()
         btnRunTmp.isUserInteractionEnabled = false
         btnStepTmp.isUserInteractionEnabled = false
@@ -72,12 +98,39 @@ class ManagerBinary{
         btnStepTmp.setNeedsDisplay()
     }
     @objc func step(sender: UIButton){
-        animate.next()
+        
+        if(ele==arayKey.count){
+            textStudy.text = ""
+            updateTextFont()
+            return
+        }
         btnRunTmp.isUserInteractionEnabled = false
-        btnStepTmp.isUserInteractionEnabled = false
         btnRunTmp.layer.backgroundColor = UIColor.gray.cgColor
         btnRunTmp.setNeedsDisplay()
-        btnStepTmp.setNeedsDisplay()
+        
+        if(arayKey[ele].isNumber){
+            btnStepTmp.isUserInteractionEnabled = false
+            let data = dictData[arayKey[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            animate.next()
+        }else if(arayKey[ele]=="end"){
+            textStudy.text = "Number 34 is found"
+            updateTextFont()
+            btnStepTmp.layer.backgroundColor = UIColor.gray.cgColor
+            btnStepTmp.setNeedsDisplay()
+            btnStepTmp.isUserInteractionEnabled = false
+            
+        }else{
+            let data = dictData[arayKey[ele]]
+            textStudy.text = data as! String?
+            updateTextFont()
+            btnStepTmp.isUserInteractionEnabled = true
+            
+        }
+        ele = ele + 1
+        
+        
     }
     
 }

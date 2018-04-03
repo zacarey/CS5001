@@ -33,9 +33,13 @@ class ManagerLinear {
         
         self.search = search
         self.arrayAction = getAction(arr: graph.arrayFind)
+        
         animate = AnimationLiear(arrayLabel: graph.arrayLabel, graph: graph, arrayAction: arrayAction)
         
-        
+        ele = 0
+        for _ in arrayAction{
+            ele = ele + 1
+        }
         textStudy = DetailTxtView(frame: CGRect(x: graph.frame.origin.x,
                                                 y: graph.frame.maxY + 20,
                                                 width: graph.frame.width,
@@ -44,24 +48,50 @@ class ManagerLinear {
         
         viewcontroller.view.addSubview(textStudy)
         
-        var path: String = ""
+        textStudy.text = "Linear Search is an algorithm for searching through elements of an array."
         
+        updateTextFont()
+        var path: String = ""
         path = Bundle.main.path(forResource:"Linear", ofType: "plist")!
         dictData = NSDictionary(contentsOfFile: path)!
         arrayKey = dictData.allKeys as! [String]            
-        
-        arrayKey = arrayKey.sorted(by: {$0 < $1})
         ele = 0
-        animate = AnimationLiear(arrayLabel: graph.arrayLabel, graph: graph, arrayAction: arrayAction)
+        arrayKey = arrayKey.sorted()
+        
+        
         
     }
+    
+    func updateTextFont() {
+        if (textStudy.text.isEmpty || textStudy.bounds.size.equalTo(CGSize.zero)) {
+            return;
+        }
+        
+        let textViewSize = textStudy.frame.size;
+        let fixedWidth = textViewSize.width;
+        let expectSize = textStudy.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT)))
+        
+        var expectFont = textStudy.font
+        if (expectSize.height > textViewSize.height) {
+            while (textStudy.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat(MAXFLOAT))).height > textViewSize.height) {
+                expectFont = textStudy.font!.withSize(textStudy.font!.pointSize - 1)
+                textStudy.font = expectFont
+            }
+        }
+        else {
+            return
+        }
+    }
+    
     
     func getAction(arr: [Int]) -> [LinearStep] {
         linear = LinearSearch(arrayInput: arr, search: search)
         return linear.arrayAction
     }
     @objc func run(sender: UIButton){
-        textStudy.text = "Search: \(search!)"
+        
+        textStudy.text = "Search: \(String(search))"
+        
         animate.loop()
         btnRunTmp.isUserInteractionEnabled = false
         btnStepTmp.isUserInteractionEnabled = false
@@ -71,6 +101,7 @@ class ManagerLinear {
         btnStepTmp.setNeedsDisplay()
     }
     @objc func step(sender: UIButton){
+        textStudy.text = "Search: \(String(search)) \nWe compare \(String(search)) to each number in the list. This operation will repeat through the list until \(String(search)) is found."
         animate.next()
         btnRunTmp.isUserInteractionEnabled = false
         btnStepTmp.isUserInteractionEnabled = false

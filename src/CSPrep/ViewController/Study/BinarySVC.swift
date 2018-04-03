@@ -20,7 +20,7 @@ class BinarySVC: StudyVC {
         
         manager = ManagerBinary()
         
-        search = Int(arc4random_uniform(36)) + 1
+        search = 34
         manager.initBinary(viewcontroller: self, search: search)
         btnRun.addTarget(self.manager, action: #selector(manager.run(sender:)), for: .touchUpInside)
         btnStep.addTarget(self.manager, action: #selector(manager.step(sender:)), for: .touchUpInside)
@@ -35,7 +35,7 @@ class BinarySVC: StudyVC {
         btnStep.layer.backgroundColor = LIME_COLOR.cgColor
         btnRun.setNeedsDisplay()
         btnStep.setNeedsDisplay()
-        search = Int(arc4random_uniform(36)) + 1
+        search = 34
         manager.initBinary(viewcontroller: self, search: search)
         
     }

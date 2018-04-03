@@ -3,23 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>01</key>
-	<string>To begin, we need to build a max heap.</string>
-	<key>01.1</key>
-	<string>One characteristic of a max heap is all the parents are greater than or equal to their children.</string>
+	<string>To begin, we need to build a max heap. In a max heap, all the parents are greater than or equal to their children.</string>
 	<key>01.2</key>
-	<string>First, the last parent node is targeted. </string>
-	<key>01.3</key>
-	<string>In this case, &quot;1&quot; is the last parent. It has two children &quot;2&quot; and &quot;5&quot;, both are greater than &quot;1&quot;. </string>
+	<string>To build a max heap, the last parent node, which is &quot;2&quot;, is targeted. &quot;2&quot; has a child, &quot;8&quot;. </string>
 	<key>02</key>
-	<string>However, &quot;5&quot; is the greatest number, so &quot;5&quot; and &quot;1&quot; are swapped.</string>
+	<string>Since, &quot;8&quot; is greater than its parent. Swap &quot;8&quot; and &quot;2&quot;.</string>
 	<key>02.1</key>
-	<string>Then, the next parent node is analyzed. This time, &quot;4&quot; is the parent.</string>
+	<string>Then, the next parent node is analyzed. This time, &quot;3&quot; is the parent.</string>
 	<key>02.2</key>
-	<string>&quot;4&quot; now has two children &quot;5&quot; and &quot;9&quot;.</string>
+	<string>&quot;3&quot; has two children &quot;7&quot; and &quot;0&quot;.</string>
 	<key>03</key>
-	<string>&quot;9&quot; is the greatest number, so &quot;9&quot; and &quot;4&quot; are swapped.</string>
+	<string>&quot;7&quot; is the greatest number, so &quot;7&quot; and &quot;3&quot; are swapped.</string>
 	<key>03.1</key>
-	<string>Now, we have a max heap. The operation used above is called max heapify.</string>
+	<string>Again, the next </string>
 	<key>04</key>
 	<string>Then, the root of the heap, which is the greatest number of the heap, is swapped with the last number of the heap.</string>
 	<key>05</key>

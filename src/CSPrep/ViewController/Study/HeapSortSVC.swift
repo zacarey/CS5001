@@ -20,7 +20,7 @@ class HeapSortSVC: StudyVC {
         title = "Heap Sort"
         
         self.managerSort = ManagerHeapSort()
-        self.managerSort.initSortWith(viewcontroller: self, arrayInput: [4,1,9,2,5])
+        self.managerSort.initSortWith(viewcontroller: self, arrayInput: [4,3,2,7,0,8])
         
         btnRun.addTarget(self.managerSort, action: #selector(managerSort.run(sender:)), for: .touchUpInside)
         btnStep.addTarget(self.managerSort, action: #selector(managerSort.step(sender:)), for: .touchUpInside)
@@ -36,7 +36,7 @@ class HeapSortSVC: StudyVC {
         btnStep.layer.backgroundColor = LIME_COLOR.cgColor
         btnRun.setNeedsDisplay()
         btnStep.setNeedsDisplay()
-        managerSort.initSortWith(viewcontroller: self, arrayInput: [4,1,9,2,5])
+        managerSort.initSortWith(viewcontroller: self, arrayInput: [4,3,2,7,0,8])
     }
     
     override func didReceiveMemoryWarning() {
