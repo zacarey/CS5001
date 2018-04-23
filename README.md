@@ -9,7 +9,7 @@ By: Loc Tran & Zach Carey
 3. [User Stories and Design Diagrams](Capstone/Design)
 4. [Test Plan and Results](Capstone/Tests)
 5. [User Manual](Capstone/UserManual.md)
-6. [Presentation](Capstone/Presentation)
+6. [Presentation](https://www.youtube.com/watch?v=F7DX28LeSWQ&feature=youtu.be)
 7. [Poster](Capstone/Poster)
 7. [Assessments](Capstone/Assessments)
 8. [Time Report](Capstone/TimeReport.md)
