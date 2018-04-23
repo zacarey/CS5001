@@ -6,7 +6,7 @@ By: Loc Tran & Zach Carey
 
 1. [Project Description](Capstone/Description.md)
 2. [User Interface Specification](Capstone/Design/UserInterface.md)
-3. [Test Plan and Results](Capstone/Tests)
+3. [Test Plan and Results](Capstone/Test%20Cases.pdf)
 4. [User Manual](Capstone/UserManual.md)
 5. [Presentation](https://www.youtube.com/watch?v=F7DX28LeSWQ&feature=youtu.be)
 6. [Poster](Capstone/Poster/CSPrep_Poster.pdf)
