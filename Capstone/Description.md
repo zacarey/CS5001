@@ -2,6 +2,16 @@
 
 ### CSPrep
 
+###### Team Members
+
+Zach Carey - careyzr@mail.uc.edu
+
+Loc Tran - tranl2@mail.uc.edu
+
+###### Faculty Advisor
+
+Dr. Kenneth Berman
+
 ###### Abstract
 
 Our project, CSPrep, is an application to teach and provide a single point of reference for beginner to introductory Computer Science concepts. These concepts are illustrated and described to help the user easily understand complex subject matter as well as provide readings and mathematical formula.
