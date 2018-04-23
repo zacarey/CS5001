@@ -1,4 +1,4 @@
-## Zach Carey Self-Assessment
+## Zach Carey Self-Assessment (Initial)
 
 ##### Introduction
 Our project is an iOS application that teaches Computer Science concepts with a focus on data structures
